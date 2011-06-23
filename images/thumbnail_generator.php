@@ -2,7 +2,7 @@
 $imagefolder='.';
 $thumbsfolder='.';
 $pics=directory($imagefolder,"jpg,JPG,JPEG,jpeg,png,PNG");
-$pics=ditchtn($pics,"thumb_");
+$pics=ditchtn($pics,"tn_");
 $count ='0';
 
 
@@ -108,6 +108,5 @@ function directory($dir,$filters)
 	closedir($handle);
 	return $files;
 }
-
 
 ?>
