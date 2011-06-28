@@ -13,7 +13,7 @@
 
 <a href="dadgumBlog.php" id="link2">2
 <span class="freshRollover">
-<img alt="Dad Gum Photo Blog" src="menu_items/blog_Menu.png" />
+<img alt="Dad Gum Photo Blog" src="menu_items/photo_Gallery.png" />
 </span>
 </a>
 
