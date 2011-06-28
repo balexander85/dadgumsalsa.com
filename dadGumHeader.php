@@ -52,8 +52,6 @@ if (preg_match($blog_pattern, $urlValue)) {
 } else {
 	$bodyid = "mainBody";
 }
-
-
 ?>
 
 
