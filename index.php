@@ -25,7 +25,7 @@
 
 <a href="dadgumGallery.php" id="link4">4
 <span class="freshRollover">
-<img alt="Fresh Rollover" src="menu_items/freshRollover.png" />
+<img alt="Fresh Rollover" src="menu_items/photo_Gallery.png" />
 </span>
 </a>
 
