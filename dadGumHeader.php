@@ -69,7 +69,6 @@ if (preg_match($blog_pattern, $urlValue)) {
 <!--Cascading Style Sheets for this Dad'Gum Website--> 
 <link rel="stylesheet" type="text/css" href="dadgumStyle.css" />
 <link rel="stylesheet" type="text/css" href="dadgumStyleBlog.css" />
-<!--<link rel="stylesheet" type="text/css" href="dadgumStyleAbout.css" />-->
 <!--This is for the photo gallery-->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" type="text/css" href="dadgumStyleGallery.css" />

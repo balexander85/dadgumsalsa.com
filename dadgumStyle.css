@@ -211,7 +211,7 @@ a:hover .popupBlog {
 	width: 375px;
 }
 /*End of the popup image*/
-
+/*Beginning of CSS for dadgumAbout.php*/
 #aboutBody {
         background-color:#000000;
 }
@@ -248,3 +248,5 @@ div.transbox p, h2
         font-weight:bold;
         color:#000000;
   }
+/*End of CSS for dadgumAbout.php*/
+
