@@ -117,6 +117,16 @@ h3{
         -webkit-border-radius: 15px;
         border-radius: 20px;
 }
+/*This is for the popup image on the menu*/
+#image_map a#link5 {
+        width:25px;
+        height:44px;
+        top:115px;
+        left:585px;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        border-radius: 20px;
+}
 /*End of the rollover links placed by image_map*/
 /*Beginning of the popup image*/
 span {
