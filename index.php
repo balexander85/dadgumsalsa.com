@@ -29,8 +29,8 @@
 </span>
 </a>
 
-<a id="link5" class="photo-link" href="images/tomato_Resize.png">
- 
+<a id="link5" class="photo-link">5
+</a>
 
 </div>
 
