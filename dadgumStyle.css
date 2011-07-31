@@ -84,16 +84,13 @@ a.linkopacity:hover img {
         background-color:#000000;
 }
 #aboutBox {
-        /*padding:0px;
-        background-color:#000000;*/
-        border:4px solid #66FFFF;
+        border:4px solid #FF3300;
         background:url('images/tomato_Resize.png') no-repeat;
         position:relative;
         background-position: center top;
         margin: .5em;
         width: 975px;
         height: 700px;
-
 }
 div.transbox {
         width:700px;
