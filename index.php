@@ -6,7 +6,7 @@
 <!--<div id="image_map">-->
 
 <div id="about_MenuLink">
-<a href="dadgumAbout.php"> 
+<a class="linkopacity" href="dadgumAbout.php"> 
 <img alt="About Dad Gum" src="menu_items/about_Menu.png" />
 </a>
 </div>
