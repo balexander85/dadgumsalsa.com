@@ -3,8 +3,14 @@
 
 <div id="menuBox">
 
-<div id="image_map">
+<!--<div id="image_map">-->
 
+<div id="about_MenuLink">
+<a href="dadgumAbout.php"> 
+<img alt="About Dad Gum" src="menu_items/about_Menu.png" />
+</a>
+</div>
+<!--
 <a href="dadgumAbout.php" id="link1">1
 <span class="leftRollover">
 <img alt="About Dad Gum" src="menu_items/about_Menu.png" />
@@ -31,8 +37,9 @@
 
 <a id="link5" class="photo-link">5
 </a>
+-->
 
-</div>
+</div><!--End of menuBox div-->
 
 
 <?php include "dadGumFooter.php";?>
