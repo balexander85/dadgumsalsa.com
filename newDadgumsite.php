@@ -8,11 +8,45 @@
 <meta name="keywords" content="Dad Gum, Salsa, Dad Gum Salsa, Chips and Salsa" />  
 <title>New Dad Gum Website</title>
 <!--Cascading Style Sheets for this Dad'Gum Website--> 
+<style type="text/css">
+body
+{
+	background-color: #000000;
+
+}
+#mainFrame
+{
+	position: fixed;
+	left: 225Px;
+	top: 70px;
+	background-color: white;
+	width: 861px;
+	height: 548px;
+}
+#pageTitle
+{
+	position: fixed;
+	bottom: 150px;
+	left: 255px;
+}
+#frontImage
+{
+	position: fixed;
+	right: 275px;
+	top: 175px;
+}
+</style>
 </head>
 <body>
 
+<div id="mainFrame">
+
+<img id="pageTitle" src="images/DGSfrontTitle.png" alt="Dad Gum Salsa Title" />
 
 
+<img id="frontImage" src="images/DGSfrontImage.png" alt="Dad Gum Salsa Pepper" />
+
+</div>
 
 </body>
 </html>
