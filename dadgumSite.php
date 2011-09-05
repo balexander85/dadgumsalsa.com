@@ -82,7 +82,7 @@ a.linkopacity:hover img
 <a href="http://www.google.com">
 <img id="frontImage" src="images/DGSfrontImage.png" alt="Dad Gum Salsa Pepper" />
 </a>
-
+<!--
 <a class="linkopacity" href="">
 <img id="aboutLink" src="images/DGSaboutLink.png" alt="About Label" />
 </a>
@@ -94,6 +94,7 @@ a.linkopacity:hover img
 <a class="linkopacity" href="">
 <img id="orderLink" src="images/DGSorderLink.png" alt="Blog Label" />
 </a>
+-->
 </div>
 
 </body>
