@@ -88,7 +88,7 @@ a.linkopacity:hover img
 </a>
 
 <a class="linkopacity" href="">
-<img id="orderLink" src="images/DGSorderLink.png" alt="Blog Label" />
+<img id="orderLink" src="images/DGSorderLink.png" alt="Order Label" />
 </a>
 -->
 </div>
