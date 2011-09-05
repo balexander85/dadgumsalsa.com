@@ -26,7 +26,7 @@ body
 {
 	position: fixed;
 	bottom: 150px;
-	left: 255px;
+	left: 50px;
 }
 #frontImage
 {
@@ -37,21 +37,21 @@ body
 #aboutLink
 {
 	position: fixed;
-	left: 425px;
+	left: 350px;
 	bottom: 250px;
 
 }
 #blogLink
 {
 	position: fixed;
-	left: 425px;
+	left: 350px;
 	bottom: 225px;
 
 }
 #orderLink
 {
 	position: fixed;
-	left: 425px;
+	left: 350px;
 	bottom: 200px;
 
 }
@@ -78,7 +78,7 @@ a.linkopacity:hover img
 <img id="pageTitle" src="images/DGSfrontTitle.png" alt="Dad Gum Salsa Title" />
 
 <img id="frontImage" src="images/DGSfrontImage.png" alt="Dad Gum Salsa Pepper" />
-
+<!--
 <a class="linkopacity" href="">
 <img id="aboutLink" src="images/DGSaboutLink.png" alt="About Label" />
 </a>
@@ -90,6 +90,7 @@ a.linkopacity:hover img
 <a class="linkopacity" href="">
 <img id="orderLink" src="images/DGSorderLink.png" alt="Blog Label" />
 </a>
+-->
 </div>
 
 </body>
