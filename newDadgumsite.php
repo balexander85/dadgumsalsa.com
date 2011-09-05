@@ -1,5 +1,4 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <link type="image/png" rel="shortcut icon" href="resources/tomato_Favicon.png"/>
@@ -35,6 +34,41 @@ body
 	right: 275px;
 	top: 175px;
 }
+#aboutLink
+{
+	position: fixed;
+	left: 425px;
+	bottom: 250px;
+
+}
+#blogLink
+{
+	position: fixed;
+	left: 425px;
+	bottom: 225px;
+
+}
+#orderLink
+{
+	position: fixed;
+	left: 425px;
+	bottom: 200px;
+
+}
+a.linkopacity img 
+{
+	filter:alpha(opacity=25);
+	-moz-opacity: 0.25; 
+	opacity: 0.25;
+	-khtml-opacity: 0.25;
+}
+a.linkopacity:hover img 
+{
+	filter:alpha(opacity=100); 
+	-moz-opacity: 1.0; 
+	opacity: 1.0;
+	-khtml-opacity: 1.0; 
+}
 </style>
 </head>
 <body>
@@ -43,9 +77,19 @@ body
 
 <img id="pageTitle" src="images/DGSfrontTitle.png" alt="Dad Gum Salsa Title" />
 
-
 <img id="frontImage" src="images/DGSfrontImage.png" alt="Dad Gum Salsa Pepper" />
 
+<a class="linkopacity" href="">
+<img id="aboutLink" src="images/DGSaboutLink.png" alt="About Label" />
+</a>
+
+<a class="linkopacity" href="">
+<img id="blogLink" src="images/DGSblogLink.png" alt="Blog Label" />
+</a>
+
+<a class="linkopacity" href="">
+<img id="orderLink" src="images/DGSorderLink.png" alt="Blog Label" />
+</a>
 </div>
 
 </body>
