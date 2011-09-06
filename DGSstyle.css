@@ -1,0 +1,61 @@
+body
+{
+	background-color: #FFFFFF;
+
+}
+#mainFrame
+{
+	position: fixed;
+	left: 25Px;
+	top: 70px;
+	background-color: #FFFFFF;
+	width: 1024px;
+	height: 768px;
+}
+#pageTitle
+{
+	position: fixed;
+	bottom: 150px;
+	left: 50px;
+}
+#frontImage
+{
+	position: fixed;
+	right: 275px;
+	top: 175px;
+}
+#aboutLink
+{
+	position: fixed;
+	left: 225px;
+	bottom: 250px;
+
+}
+#blogLink
+{
+	position: fixed;
+	left: 225px;
+	bottom: 225px;
+
+}
+#orderLink
+{
+	position: fixed;
+	left: 225px;
+	bottom: 200px;
+
+}
+a.linkopacity img 
+{
+	filter:alpha(opacity=25);
+	-moz-opacity: 0.25; 
+	opacity: 0.25;
+	-khtml-opacity: 0.25;
+}
+a.linkopacity:hover img 
+{
+	filter:alpha(opacity=100); 
+	-moz-opacity: 1.0; 
+	opacity: 1.0;
+	-khtml-opacity: 1.0; 
+}
