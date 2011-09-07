@@ -15,7 +15,7 @@ body
 }
 #mainFrame
 {
-	position: fixed;
+	position: absolute;
 	left: 25Px;
 	top: 70px;
 	background-color: #FFFFFF;
@@ -24,33 +24,33 @@ body
 }
 #pageTitle
 {
-	position: fixed;
+	position: absolute;
 	bottom: 150px;
 	left: 50px;
 }
 #frontImage
 {
-	position: fixed;
+	position: absolute;
 	right: 275px;
 	top: 175px;
 }
 #aboutLink
 {
-	position: fixed;
+	position: absolute;
 	left: 225px;
 	bottom: 250px;
 
 }
 #blogLink
 {
-	position: fixed;
+	position: absolute;
 	left: 225px;
 	bottom: 225px;
 
 }
 #orderLink
 {
-	position: fixed;
+	position: absolute;
 	left: 225px;
 	bottom: 200px;
 
