@@ -25,13 +25,13 @@ body
 #pageTitle
 {
 	position: absolute;
-	bottom: 150px;
+	bottom: 200px;
 	left: 50px;
 }
 #frontImage
 {
 	position: absolute;
-	right: 275px;
+	right: 15px;
 	top: 175px;
 }
 #aboutLink
