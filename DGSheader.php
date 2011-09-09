@@ -13,7 +13,7 @@
 
 <div id="mainFrame">
 
-<a href="newDadgumsite.php">
+<a href="dadgumSite.php">
 <img id="pageTitle" src="images/DGSfrontTitle.png" alt="Dad Gum Salsa Title" />
 </a>
 
