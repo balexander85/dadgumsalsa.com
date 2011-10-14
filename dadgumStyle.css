@@ -7,32 +7,33 @@ body /*This is the 'Selector'*/ {
 }
 /*Start of header details*/
 #headerPage {
-	border:4px solid blue;
 	margin: .5em;
 	background-image: url('resources/dadgumHeaderBA.png');
 	background-repeat:no-repeat;
 	background-position:center top;
 	border-radius: 10px 10px 10px 10px;/*Rounds the corners*/
+	border:4px solid blue;
+
 }
 #linkHome {
 	height: 95px;
 	width: 968px;
-	border: 4px solid gray;
+	/*border: 4px solid gray;*/
 }
 /*End of header details*/
 /*Start of footer details*/
 #footerPage {
-	border:4px solid orange;
 	margin: .5em;
 	background-image: url('resources/dadgumFooterBA.png');
 	background-repeat:no-repeat;
 	background-position:center top;
 	border-radius: 10px 10px 10px 10px;/*Rounds the corners*/
+	border:4px solid orange;
 }
 #contactUs {
 	height: 105px;
 	width: 968px;
-	border: 4px solid gray;
+	/*border: 4px solid gray;*/
 }
 /*End of footer details*/
 /*this is for the menu div */
@@ -41,7 +42,7 @@ body /*This is the 'Selector'*/ {
 	background-position: center;
 	border:4px solid #660066;
 	margin: .5em;
-	height: 895px;
+	height: 850px;
 	width: 975px;
 	border-radius: 10px 10px 10px 10px;/*Rounds the corners*/
 }
