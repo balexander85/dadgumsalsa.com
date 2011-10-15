@@ -40,35 +40,31 @@ body /*This is the 'Selector'*/ {
 #menuBox {
 	background: url('menu_items/Jap1-3.png') no-repeat;
 	background-position: center;
-	border:4px solid #660066;
 	margin: .5em;
 	height: 850px;
 	width: 975px;
 	border-radius: 10px 10px 10px 10px;/*Rounds the corners*/
+	border:4px solid #660066;
+}
+.menuLink {
+	position: relative;
+	height: 62px;
+	/*border: 4px solid #00FFFF;*/
 }
 #about_MenuLink {
-	position: relative;
-	width: 388px;
-	height: 65px;
-	top: 120px;
-	left: 15px;
-	border: 4px solid #00FFFF;
+	width: 370px;
+	top: 110px;
+	left: 39px;
 }
 #gallery_MenuLink {
-	position: relative;
 	width: 390px;
-	height: 65px;
 	top: 210px;
-	left: -15px;
-	border: 4px solid #00FFFF;
+	left: -5px;
 }
 #order_MenuLink {
-	position: relative;
 	width: 390px;
-	height: 65px;
-	top: 220px;
-	left: -10px;
-	border: 4px solid #00FFFF;
+	top: 225px;
+	left: 22px;
 }
 /*Image links start opaque, then image lighten up on hover*/
 a.linkopacity img {
