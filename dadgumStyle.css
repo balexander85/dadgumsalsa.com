@@ -1,17 +1,20 @@
-body /*This is the 'Selector'*/ {
+body {
 	width: 1000px;
 	margin:auto;
 }
 #mainBody {
 	background-color:#000000;
+	margin:auto;
+}
+.page_Pos {
+	background-repeat:no-repeat;
+	background-position:center top;
+	border-radius: 10px 10px 10px 10px;/*Rounds the corners*/
 }
 /*Start of header details*/
 #headerPage {
 	margin: .5em;
 	background-image: url('resources/dadgumHeaderBA.png');
-	background-repeat:no-repeat;
-	background-position:center top;
-	border-radius: 10px 10px 10px 10px;/*Rounds the corners*/
 	border:4px solid blue;
 
 }
@@ -25,9 +28,6 @@ body /*This is the 'Selector'*/ {
 #footerPage {
 	margin: .5em;
 	background-image: url('resources/dadgumFooterBA.png');
-	background-repeat:no-repeat;
-	background-position:center top;
-	border-radius: 10px 10px 10px 10px;/*Rounds the corners*/
 	border:4px solid orange;
 }
 #contactUs {
@@ -85,13 +85,13 @@ a.linkopacity:hover img {
         background-color:#000000;
 }
 #aboutBox {
-        border:4px solid #FF3300;
         background:url('images/tomato_Resize.png') no-repeat;
         position:relative;
         background-position: center top;
         margin: .5em;
         width: 975px;
         height: 700px;
+	border:4px solid #FF3300;
 }
 div.transbox {
         width:700px;
@@ -105,10 +105,10 @@ div.transbox {
         filter:alpha(opacity=60);
         /* CSS3 standard */
         opacity:0.5;
-  }
+}
 div.transbox p, h2 {
         margin:30px 40px;
         font-weight:bold;
         color:#000000;
-  }
+}
 /*End of CSS for dadgumAbout.php*/

@@ -82,6 +82,6 @@ if (preg_match($blog_pattern, $urlValue)) {
 </head>
 <body id="<?php print $bodyid; ?>">
 
-<div id="headerPage"><!--added a png and adjusted the size-->
+<div class="page_Pos" id="headerPage"><!--added a png and adjusted the size-->
 <a href="index.php"><div id="linkHome"></div></a>
 </div>
