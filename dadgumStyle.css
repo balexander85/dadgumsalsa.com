@@ -59,7 +59,6 @@ h3{
 #image_map a {
 	display: block;
 	position: absolute;
-	
 } 
 #image_map a.menu {
 	width: 100px;
@@ -128,9 +127,19 @@ div.transbox p, h2 {
 }
 /*End of CSS for dadgumAbout.php*/
 /*Beginining of dadgumOrder.php*/
+#order {
+	background: url('images/tomato_Resize.png') no-repeat;
+	position: relative;
+	background-position: center top;
+	margin: .5em;
+	height: 275px;
+	width: 975px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
 #payment-form {
-
-	background-color: #FFFFFF;
+	color: #FFFFFF;
 	position: relative;
 	background-position: center top;
 	margin: .5em;
@@ -139,7 +148,7 @@ div.transbox p, h2 {
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
-
+	border: 1px solid #FFFFFF;
 }
 
 
