@@ -127,3 +127,20 @@ div.transbox p, h2 {
 	color: #000000;
 }
 /*End of CSS for dadgumAbout.php*/
+/*Beginining of dadgumOrder.php*/
+#payment-form {
+
+	background-color: #FFFFFF;
+	position: relative;
+	background-position: center top;
+	margin: .5em;
+	height: 250px;
+	width: 975px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+
+}
+
+
+/*End of dadgumOrder.php*/
