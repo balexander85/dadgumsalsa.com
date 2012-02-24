@@ -131,7 +131,7 @@ div.transbox p, h2 {
 	background: url('images/tomato_Resize.png') no-repeat;
 	position: relative;
 	background-position: center top;
-	margin: .5em;
+	margin: -.5em;
 	height: 275px;
 	width: 975px;
 	-moz-border-radius: 10px;
@@ -143,12 +143,12 @@ div.transbox p, h2 {
 	position: relative;
 	background-position: center top;
 	margin: .5em;
-	height: 250px;
+	height: 325px;
 	width: 975px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
-	border: 1px solid #FFFFFF;
+	/*border: 1px solid #FFFFFF;*/
 }
 
 
