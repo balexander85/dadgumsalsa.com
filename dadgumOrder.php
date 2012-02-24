@@ -57,6 +57,7 @@ if ($_POST) {
     	<div class="form-row">
     		<label>Email</label>
     		<input type="text" name="email" />
+        </div>
         <div class="form-row">
             <label>Card Number</label>
             <input type="text" size="20" autocomplete="off" class="card-number" />
