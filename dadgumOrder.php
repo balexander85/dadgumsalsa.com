@@ -29,11 +29,34 @@ if ($_POST) {
 
 </div>
 		
-	<h1>Charge $10 with Stripe</h1>
+	
+	
     <!-- to display errors returned by createToken -->
     <span class="payment-errors"><?= $error ?></span>
     <span class="payment-success"><?= $success ?></span>
     <form action="" method="POST" id="payment-form">
+    	<div>
+		<h3>Welcome to the Dad Gum Order Page</h3>
+		<h4>Charge $10 with Stripe</h4>
+		<h5>Please fill in the form below completely and then press Submit Payment</h5>
+		<br />
+		</div>
+		<div class="form-row">
+			<label>Salsa Size:</label>
+			<select name="salsa-size">
+			<option value="half-pint">Half Pint ($5.99)</option>
+			<option value="pint">Pint ($7.99)</option>
+			<option value="quart">Quart ($12.99)</option>
+			</select>
+		</div>
+		<br />
+		<div class="form-row">
+    		<label>First name</label><input type="text" name="firstname" />
+    		<label>Last name</label><input type="text" name="lastname" />
+    	</div>
+    	<div class="form-row">
+    		<label>Email</label>
+    		<input type="text" name="email" />
         <div class="form-row">
             <label>Card Number</label>
             <input type="text" size="20" autocomplete="off" class="card-number" />
@@ -54,10 +77,7 @@ if ($_POST) {
 
 <!--<form action="index.php" method="POST" id="payment-form">
     
-	<div>
-	<h3>Welcome to the Dad Gum Order Page</h3>
-	<h5>Please fill in the form below completely and then press Submit Payment</h5>
-	</div>
+
 	<br />
     <div class="form-row">
         <label>Card Number</label>
