@@ -50,8 +50,8 @@ if ($_POST) {
 <form action="" method="POST" id="payment-form">
 	<div>
 	<h3>Welcome to the Dad Gum Order Page</h3>
-	<h4>Charge with Stripe</h4>
-	<h5>Please fill in the form below completely and then press Submit Payment</h5>
+	<p class="paragraph">Please fill in the form below completely and then press Submit Payment<p/>
+	<p id="note">Note: I will only fill orders that I can hand deliver at the moment, I will try to work on shipping orders soon.</p>
 	<br />
 	</div>
 	<div class="form-row">

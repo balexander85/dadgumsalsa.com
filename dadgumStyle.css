@@ -6,6 +6,18 @@ body/*This is the 'Selector'*/ {
 	background-color: #000000;
 	margin: auto;
 }
+h3{
+	color: #00ff00;
+}
+.paragraph{
+	color: #FFFFFF;
+	font-size: 16px;
+}
+#note{
+	color: red;
+	margin: .5em;
+	font-size: 20px;
+}
 .page_Pos {
 	background-repeat:no-repeat;
 	background-position:center top;
@@ -42,9 +54,6 @@ body/*This is the 'Selector'*/ {
 	/*border: 4px solid gray;*/
 }
 /*End of footer details*/
-h3{
-	color: #00ff00;
-}
 /*this is for the menu div */
 #menuBox {
 	/*border:4px solid gray;*/
