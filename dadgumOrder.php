@@ -1,12 +1,15 @@
 <?php
 require_once("stripe-php/lib/Stripe.php");
 
+//Assigning the price to the different sizes of jars
 $half_pint = 599;
 $pint = 799;
 $quart = 1299;
+//Assigns the salsa size and the number of jars selected
 $salsa_size = $_POST["salsa-size"];
 $quantity = $_POST["quantity"];
 
+//Sets the price of the salsa to the jar size chosen
 if ($salsa_size == "half-pint")
 	$salsa_price = $half_pint;
 elseif ($salsa_size == "pint")
@@ -14,12 +17,9 @@ elseif ($salsa_size == "pint")
 elseif ($salsa_size == "quart")
 	$salsa_price = $quart;
 
-/*
-echo $salsa_price, "<br />";
-echo "Jar Size * #ofjars = ", $salsa_price * $quantity;
-echo "<br />";*/
+//Multiply the quantity times the price of the size of the jar chosen
 $amount = $salsa_price * $quantity;
-
+//below is the php script that sends the charge immediately
 if ($_POST) {
   Stripe::setApiKey("a49cCmr3rdkXurgHSdoiMWAr9WWsiGNG");
   $error = '';
@@ -36,22 +36,9 @@ if ($_POST) {
     $error = $e->getMessage();
   }
 }
-
-/*	  echo "Salsa Size: ", $_POST["salsa-size"];
-	  echo "<br />";
-	  echo "# of jars: ", $_POST["quantity"];
-	  echo "<br />";
-	  echo $_POST["firstname"], " ", $_POST["lastname"];
-      echo "<br />";
-	  echo $_POST["email"]; 
-      echo "<br />";
-	  echo $_POST["phone"];
-*/
 ?>
 
-
 <?php include "dadGumHeader.php";?>
-
 
 <div id="order">
 
@@ -84,7 +71,6 @@ if ($_POST) {
 		<label>Last name</label>
 		<input type="text" name="lastname" />
 	</div>
-	<br />
 	<div class="form-row">
 		<label>Email</label>
 		<input type="text" name="email" />
@@ -92,16 +78,15 @@ if ($_POST) {
 		<input type="text" name="phone" />
     </div>
     <br />
+    <!-- Beginning of info that is not saved by me, aka Credit Card Info-->
     <div class="form-row">
         <label>Card Number</label>
         <input type="text" size="20" autocomplete="off" class="card-number" />
     </div>
-    <br />
     <div class="form-row">
         <label>CVC</label>
         <input type="text" size="4" autocomplete="off" class="card-cvc" />
     </div>
-    <br />
     <div class="form-row">
         <label>Expiration (MM/YYYY)</label>
         <input type="text" size="2" class="card-expiry-month"/>
@@ -111,6 +96,5 @@ if ($_POST) {
     <br />
     <button type="submit" class="submit-button">Submit Payment</button>
 </form>
-
 
 <?php include "dadGumFooter.php";?>
