@@ -7,16 +7,13 @@ Ben Paulsen(gave direction with header,footer,content)
 <?php
 $urlValue = $_SERVER['REQUEST_URI'];
 $base = "Dad Gum Salsa";
-
-/*
-echo "<pre>";
-print_r($_SERVER);
-*/
 $about_pattern = '/about/i';
 $blog_pattern  = '/blog/i';
 $order_pattern  = '/order/i';
 $gallery_pattern = '/gallery/i';
 /*
+echo "<pre>";
+print_r($_SERVER);
 echo "url value";
 echo $urlValue;
 echo "<br />";
@@ -52,7 +49,6 @@ if (preg_match($blog_pattern, $urlValue)) {
 } else {
 	$bodyid = "mainBody";
 }
-
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">

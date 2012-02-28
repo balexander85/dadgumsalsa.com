@@ -1,11 +1,8 @@
 <?php include "dadGumHeader.php";?>
 
-
-
 <div id="galleryBody">
 	
 <br />
-
 <?php
 $imagefolder='.';
 $thumbsfolder='.';
@@ -19,10 +16,8 @@ if ($pics[0]!="")
 	}
 }
 
-/*
-	Function ditchtn($arr,$thumbname)
-	filters out thumbnails
-*/
+/*Function ditchtn($arr,$thumbname)
+	filters out thumbnails*/
 function ditchtn($arr,$thumbname)
 {
 	foreach ($arr as $item)
