@@ -16,7 +16,7 @@
 </a>
 -->
 <div class="menuLink" id="order_MenuLink">
-<a href="dadgumOrder.php" class="linkopacity">
+<a href="dadgumOrder.php" class="linkopacity" name="order_MenuLink">
 <img alt="Order Dad Gum" src="menu_items/order_Menu.png" />
 </a>
 </div>

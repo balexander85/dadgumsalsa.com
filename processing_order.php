@@ -1,7 +1,3 @@
-<html>
-<head></head>
-<body>
-
 <?php
 $customer_first = $_POST["firstname"];
 $customer_last = $_POST["lastname"];
@@ -11,7 +7,10 @@ $salsa_size = $_POST["salsa-size"];
 $quantity = $_POST["quantity"];
 ?>
 
-<!--<table border="1px">
+
+<?php include "dadGumHeader.php";?>
+<!--
+<table border="1px">
 <tr>
 <td>Last Name</td>
 <td>First Name</td>
@@ -32,8 +31,9 @@ $quantity = $_POST["quantity"];
 <html>
 <head></head>
 <body>
+<div id="order_placed">
 <h1>Thank you for ordering salsa from Dad Gum Salsa Co.</h1>
-<pre>Dear <?php echo $customer_first, " ", $customer_last; ?>,
+<pre style="color: #FFFFFF">Dear <?php echo $customer_first, " ", $customer_last; ?>,
      
      Thanks again for ordering from DGS. This is only a confirmation that you ordered <?php echo $quantity, " ", $salsa_size; if ($quantity != "1"){echo "s";}?> of salsa. 
 You will receive an email shortly informing you when you should expect to receive your salsa. If anything does 
@@ -42,5 +42,6 @@ not look correct or you have any questions or comments, please email me at <a hr
 Love,
 
 DGS</pre>
-</body>
-</html>
+</div>
+
+<?php include "dadGumFooter.php";?>

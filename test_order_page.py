@@ -1,11 +1,10 @@
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys 			# Definitely used for the send_keys(Keys.RETURN) function, send the "Return" key
+from selenium.webdriver.common.keys import Keys 					# Definitely used for the send_keys(Keys.RETURN) function, send the "Return" key
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait 	        # available since 2.4.0
-import datetime								# used to get the current time
-import getpass								# for security purposes, user cannot see the password being entered
+import datetime														# used to get the current time
+import getpass														# for security purposes, user cannot see the password being entered
 import re
-
 
 #||||||||||||||||||||||||||||||||||Beginning of Function Definitions||||||||||||||||||||||||||||||||||||||||||||||||
 def current_time():
@@ -45,11 +44,16 @@ def submit():
 	submit_button = driver.find_element_by_class_name("submit-button")
 	submit_button.click()
 
-	
+def go_home():
+	home_link = driver.find_element_by_id("linkHome")
+	home_link.click()
+
+def click_order():
+	order_link = driver.find_element_by_name("order_MenuLink")
+	order_link.click()
+
 #||||||||||||||||||||||||||||||||||End of Function Definitions||||||||||||||||||||||||||||||||||||||||||||||||
-
 #$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$Beginning of Program$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-
 # Create a new instance of the Firefox driver
 driver = webdriver.Firefox()
 
@@ -57,17 +61,18 @@ print driver.title
 
 current_time()
 print "|||||||||||||||||||||||||||||||||||||||||||||||||||||||"
-driver.get("http://localhost/brianalexander/dev.dadgumsalsa.com/dadgumOrder.php")
+driver.get("http://localhost/brianalexander/dev.dadgumsalsa.com/")
 
+click_order()
 customer_quantity()
 enter_customer_info()
 enter_customer_credit()
 submit()
 
+go_home()
 
 print "Press enter to close!"
 raw_input()
 driver.quit()
-
 
 #$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$End of Program$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$

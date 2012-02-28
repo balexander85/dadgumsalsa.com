@@ -138,13 +138,24 @@ div.transbox p, h2 {
 	position: relative;
 	background-position: center top;
 	margin: .5em;
-	height: 275px;
+	height: 350px;
 	width: 975px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
 	/*border: 1px solid #FFFFFF;*/
 }
-
+#order_placed {
+	color: #FFFFFF;
+	position: relative;
+	background-position: center top;
+	margin: .5em;
+	height: 250px;
+	width: 975px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	/*border: 1px solid #FFFFFF;*/
+}
 
 /*End of dadgumOrder.php*/
