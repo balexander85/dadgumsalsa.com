@@ -129,7 +129,7 @@ div.transbox p, h2 {
 /*End of CSS for dadgumAbout.php*/
 /*Beginining of dadgumOrder.php*/
 #order {
-	background: url('images/tomato_Resize.png') no-repeat;
+	background: url('images/dadgum_tomato.png') no-repeat;
 	position: relative;
 	background-position: center top;
 	margin: -.5em;
@@ -152,12 +152,12 @@ div.transbox p, h2 {
 	/*border: 1px solid #FFFFFF;*/
 }
 #order_placed {
-	background: url('images/tomato_Resize.png') no-repeat;
+	background: url('images/dadgum_bell_red.png') no-repeat;
 	color: #FFFFFF;
 	position: relative;
 	background-position: center top;
 	margin: .5em;
-	height: 250px;
+	height: 275px;
 	width: 975px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
