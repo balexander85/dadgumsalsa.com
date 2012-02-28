@@ -9,6 +9,12 @@ body/*This is the 'Selector'*/ {
 h1{
 	color: #00ff00;
 }
+
+a:link {color:#FFFFFF;}     /* unvisited link */
+a:visited {color:#000000;}  /* visited link */
+a:hover {color:#858585;} /* mouse over link */
+a:active {color:red;}  /* selected link */
+
 .paragraph{
 	color: #FFFFFF;
 	font-size: 16px;
@@ -146,6 +152,7 @@ div.transbox p, h2 {
 	/*border: 1px solid #FFFFFF;*/
 }
 #order_placed {
+	background: url('images/tomato_Resize.png') no-repeat;
 	color: #FFFFFF;
 	position: relative;
 	background-position: center top;

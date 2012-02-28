@@ -69,7 +69,7 @@ enter_customer_info()
 enter_customer_credit()
 submit()
 
-go_home()
+#go_home()
 
 print "Press enter to close!"
 raw_input()
