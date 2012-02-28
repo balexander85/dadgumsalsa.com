@@ -64,7 +64,7 @@ if ($_POST) {
 <!-- to display errors returned by createToken -->
 <span class="payment-errors"><?= $error ?></span>
 <span class="payment-success"><?= $success ?></span>
-<form action="" method="POST" id="payment-form">
+<form action="processing_order.php" method="POST" id="payment-form">
 	<div>
 	<h1>Welcome to the Dad Gum Order Page</h1>
 	<p class="paragraph">Please fill in the form below completely and then press Submit Payment<p/>

@@ -16,7 +16,7 @@ def current_time():
 def customer_quantity():
 	#enter the # of jars customer wants
 	quantity_box = driver.find_element_by_name("quantity")
-	quantity_box.send_keys("4")
+	quantity_box.send_keys("3")
 	
 def enter_customer_info():
 	# find the element that's name attribute is Email (username box)
@@ -25,8 +25,8 @@ def enter_customer_info():
 	email_box = driver.find_element_by_name("email")
 	phone_box = driver.find_element_by_name("phone")
 	# type in the user name
-	first_name_box.send_keys("Brian")
-	last_name_box.send_keys("Alexander")
+	first_name_box.send_keys("Wesley")
+	last_name_box.send_keys("Vincent")
 	email_box.send_keys("balexander04@gmail.com")
 	phone_box.send_keys("214-762-5564")
 
