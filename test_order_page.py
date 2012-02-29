@@ -15,7 +15,7 @@ def current_time():
 def customer_quantity():
 	#enter the # of jars customer wants
 	quantity_box = driver.find_element_by_name("quantity")
-	quantity_box.send_keys("3")
+	quantity_box.send_keys("2")
 	
 def enter_customer_info():
 	# find the element that's name attribute is Email (username box)
@@ -52,6 +52,10 @@ def click_order():
 	order_link = driver.find_element_by_name("order_MenuLink")
 	order_link.click()
 
+def change_size():
+	jar_size_drop = driver.find_element_by_name("quart")
+	jar_size_drop.click()
+
 #||||||||||||||||||||||||||||||||||End of Function Definitions||||||||||||||||||||||||||||||||||||||||||||||||
 #$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$Beginning of Program$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 # Create a new instance of the Firefox driver
@@ -64,6 +68,7 @@ print "|||||||||||||||||||||||||||||||||||||||||||||||||||||||"
 driver.get("http://localhost/brianalexander/dev.dadgumsalsa.com/")
 
 click_order()
+change_size()
 customer_quantity()
 enter_customer_info()
 enter_customer_credit()
