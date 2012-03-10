@@ -9,7 +9,8 @@ $urlValue = $_SERVER['REQUEST_URI'];
 $base = "Dad Gum Salsa";
 $about_pattern = '/about/i';
 $blog_pattern  = '/blog/i';
-$order_pattern  = '/order/i';
+$order_pattern  = '/order/./i';
+$order_success_pattern = '/ordersuccess/i';
 $gallery_pattern = '/gallery/i';
 /*
 echo "<pre>";
@@ -32,6 +33,8 @@ if (preg_match($blog_pattern, $urlValue)) {
 	$page = "About";
 } elseif (preg_match($order_pattern, $urlValue)) {
 	$page = "Order Page";
+} elseif (preg_match($order_success_pattern, $urlValue)) {
+	$page = "Order Successful";
 } elseif (preg_match($gallery_pattern, $urlValue)) {
 	$page = "Photo Gallery";
 } else {
