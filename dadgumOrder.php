@@ -19,6 +19,7 @@
 	<div class="form-row">
 		<label>Salsa Size:</label>
 		<select name="salsa-size">
+		<option value="" name="">Please Select Size</option>
 		<option value="half-pint" name="half-pint">Half Pint ($5.99)</option>
 		<option value="pint" name="pint">Pint ($7.99)</option>
 		<option value="quart" name="quart">Quart ($12.99)</option>

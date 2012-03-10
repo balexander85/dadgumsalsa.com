@@ -15,7 +15,7 @@ def current_time():
 def customer_quantity():
 	#enter the # of jars customer wants
 	quantity_box = WebDriverWait(driver, 3).until(lambda driver : driver.find_element_by_name("quantity"))
-	quantity_box.send_keys("1")
+	quantity_box.send_keys("4")
 	
 def enter_customer_info():
 	# find the element that's name attribute is Email (username box)
@@ -67,6 +67,7 @@ current_time()
 print "|||||||||||||||||||||||||||||||||||||||||||||||||||||||"
 driver.get("http://localhost/brianalexander/dev.dadgumsalsa.com/")
 
+#raw_input()
 click_order()
 change_size()
 customer_quantity()
