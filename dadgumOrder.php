@@ -41,7 +41,7 @@
 		<input type="text" name="phone" />
     </div>
     <br />
-    <!-- Beginning of info that is not saved by me, aka Credit Card Info-->
+    <!-- Beginning of Credit Card Info-->
     <div class="form-row">
         <label>Card Number</label>
         <input type="text" size="20" autocomplete="off" class="card-number" />
