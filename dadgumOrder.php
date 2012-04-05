@@ -52,9 +52,21 @@
     </div>
     <div class="form-row">
         <label>Expiration (MM/YYYY)</label>
-        <input type="text" size="2" class="card-expiry-month"/>
+        <select name="ccExpM" class="card-expiry-month">
+		<?php
+			for($i = 1; $i < 13; $i++){ 
+				echo '<option>' . $i . '</option>'; 
+			} 
+		?>
+		</select>
         <span> / </span>
-        <input type="text" size="4" class="card-expiry-year"/>
+        <select name="ccExpY" class="card-expiry-year">
+		<?php
+			for($i = 2012; $i < 2020; $i++){ 
+				echo '<option>' . $i . '</option>'; 
+			} 
+		?>
+		</select>
     </div>
     <br />
     <button type="submit" class="submit-button">Submit Payment</button>
