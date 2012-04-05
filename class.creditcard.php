@@ -1,4 +1,9 @@
-<?php  
+<?php 
+
+	echo "<h1>Hello World! Dad Gum!</h1>";
+?>
+
+<?php
 
 define("CARD_TYPE_MC", 0);  
 define("CARD_TYPE_VS", 1);  
@@ -252,5 +257,5 @@ class CCreditCard  
 			return false;
 		}         
  	}
- }     
+ }
 ?>
