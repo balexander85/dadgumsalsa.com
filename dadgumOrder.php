@@ -47,6 +47,24 @@
         <input type="text" size="20" autocomplete="off" class="card-number" />
     </div>
     <div class="form-row">
+    	<label>Card Type</label>
+		<select tabindex="11" id="CardType">
+		<option value="AmEx">American Express</option>
+		<option value="CarteBlanche">Carte Blanche</option>
+		<option value="DinersClub">Diners Club</option>
+		<option value="Discover">Discover</option>
+		<option value="EnRoute">enRoute</option>
+		<option value="JCB">JCB</option>
+		<option value="Maestro">Maestro</option>
+		<option value="MasterCard">MasterCard</option>
+		<option value="Solo">Solo</option>
+		<option value="Switch">Switch</option>
+		<option value="Visa">Visa</option>
+		<option value="VisaElectron">Visa Electron</option>
+		<option value="LaserCard">Laser</option>
+		</select>
+    </div>
+    <div class="form-row">
         <label>CVC</label>
         <input type="text" size="4" autocomplete="off" class="card-cvc" />
     </div>
