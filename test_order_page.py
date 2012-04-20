@@ -37,8 +37,8 @@ def enter_customer_credit():
 
 	credit_box.send_keys("4242424242424242")
 	cvc_box.send_keys("123")
-	exp_month_box.send_keys("09")
-	exp_year_box.send_keys("2014")
+	#exp_month_box.send_keys("09")
+	#exp_year_box.send_keys("2014")
 	
 def submit():
 	submit_button = driver.find_element_by_class_name("submit-button")
