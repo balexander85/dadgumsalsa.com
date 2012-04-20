@@ -9,7 +9,7 @@ $urlValue = $_SERVER['REQUEST_URI'];
 $base = "Dad Gum Salsa";
 $about_pattern = '/about/i';
 $blog_pattern  = '/blog/i';
-$order_pattern  = '/order/./i';
+$order_pattern  = '/order./i';
 $order_success_pattern = '/ordersuccess/i';
 $gallery_pattern = '/gallery/i';
 /*
@@ -71,6 +71,15 @@ if (preg_match($blog_pattern, $urlValue)) {
 	<link rel="stylesheet" type="text/css" href="resources/fancy.css" />
 	<script type="text/javascript" src="js/jquery-1.2.3.pack.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox-1.0.0.js"></script>
+	<script type="text/javascript" src="credit_card/creditcard.js"></script>
+	<script type="text/javascript">
+	function testCreditCard () {
+	  if (checkCreditCard (document.getElementById('CardNumber').value,document.getElementById('CardType').value)) {
+	    alert ("Credit card has a valid format")
+	  } 
+	  else {alert (ccErrors[ccErrorNo])};
+	}
+	</script>
 	<script type="text/javascript">
 		$(function(){		
 			$(".photo-link").fancybox({ 'zoomSpeedIn': 500, 'zoomSpeedOut': 500, 'overlayShow': true }); 	

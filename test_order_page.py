@@ -34,11 +34,13 @@ def enter_customer_credit():
 	cvc_box = driver.find_element_by_class_name("card-cvc")
 	exp_month_box = driver.find_element_by_class_name("card-expiry-month")
 	exp_year_box = driver.find_element_by_class_name("card-expiry-year")
+	card_type_box = driver.find_element_by_id("CardType")
 
-	credit_box.send_keys("4242424242424242")
+	credit_box.send_keys("4844424242424242")
 	cvc_box.send_keys("123")
-	#exp_month_box.send_keys("09")
-	#exp_year_box.send_keys("2014")
+	card_type_box.send_keys("Visa")
+	exp_month_box.send_keys("9")
+	exp_year_box.send_keys("2013")
 	
 def submit():
 	submit_button = driver.find_element_by_class_name("submit-button")

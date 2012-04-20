@@ -44,7 +44,7 @@
     <!-- Beginning of Credit Card Info-->
     <div class="form-row">
         <label>Card Number</label>
-        <input type="text" size="20" autocomplete="off" class="card-number" />
+        <input type="text" size="20" autocomplete="off" class="card-number" id="CardNumber" />
     </div>
     <div class="form-row">
     	<label>Card Type</label>
@@ -87,7 +87,7 @@
 		</select>
     </div>
     <br />
-    <button type="submit" class="submit-button">Submit Payment</button>
+    <button type="submit" class="submit-button" onclick="testCreditCard();" >Submit Payment</button>
 </form>
 
 <?php include "dadGumFooter.php";?>

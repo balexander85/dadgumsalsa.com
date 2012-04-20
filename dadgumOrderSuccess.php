@@ -1,6 +1,6 @@
-<?php 
+<?php include "dadGumHeader.php";?>
 
-include "dadGumHeader.php";
+<?php 
 // This includes all the info that is submitted through the form
 include "form_info.php";
 
