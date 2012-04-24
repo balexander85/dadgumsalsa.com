@@ -87,7 +87,7 @@
 		</select>
     </div>
     <br />
-    <button type="submit" class="submit-button" onclick="testCreditCard();" >Submit Payment</button>
+    <button type="submit" class="submit-button" onsubmit="testCreditCard();" >Submit Payment</button>
 </form>
 
 <?php include "dadGumFooter.php";?>

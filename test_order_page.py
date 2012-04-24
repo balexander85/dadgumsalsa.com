@@ -24,8 +24,8 @@ def enter_customer_info():
 	email_box = driver.find_element_by_name("email")
 	phone_box = driver.find_element_by_name("phone")
 	# type in the user name
-	first_name_box.send_keys("Wesley")
-	last_name_box.send_keys("Vincent")
+	first_name_box.send_keys("Brian")
+	last_name_box.send_keys("Alexander")
 	email_box.send_keys("balexander04@gmail.com")
 	phone_box.send_keys("214-762-5564")
 
@@ -36,7 +36,7 @@ def enter_customer_credit():
 	exp_year_box = driver.find_element_by_class_name("card-expiry-year")
 	card_type_box = driver.find_element_by_id("CardType")
 
-	credit_box.send_keys("4844424242424242")
+	credit_box.send_keys("4242424242424242")
 	cvc_box.send_keys("123")
 	card_type_box.send_keys("Visa")
 	exp_month_box.send_keys("9")

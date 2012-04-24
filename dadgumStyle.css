@@ -20,7 +20,7 @@ a:active {color:red;}  /* selected link */
 	font-size: 16px;
 }
 #note{
-	color: red;
+	color: #E6E600;
 	margin: .5em;
 	font-size: 20px;
 }
@@ -163,6 +163,9 @@ div.transbox p, h2 {
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
 	/*border: 1px solid #FFFFFF;*/
+}
+.payment-errors {
+	color: #FF0000;
 }
 
 /*End of dadgumOrder.php*/

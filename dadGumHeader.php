@@ -71,21 +71,25 @@ if (preg_match($blog_pattern, $urlValue)) {
 	<link rel="stylesheet" type="text/css" href="resources/fancy.css" />
 	<script type="text/javascript" src="js/jquery-1.2.3.pack.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox-1.0.0.js"></script>
-	<script type="text/javascript" src="credit_card/creditcard.js"></script>
 	<script type="text/javascript">
-	function testCreditCard () {
-	  if (checkCreditCard (document.getElementById('CardNumber').value,document.getElementById('CardType').value)) {
-	    alert ("Credit card has a valid format")
-	  } 
-	  else {alert (ccErrors[ccErrorNo])};
-	}
-	</script>
-	<script type="text/javascript">
-		$(function(){		
-			$(".photo-link").fancybox({ 'zoomSpeedIn': 500, 'zoomSpeedOut': 500, 'overlayShow': true }); 	
+		$(function(){
+			$(".photo-link").fancybox({ 'zoomSpeedIn': 500, 'zoomSpeedOut': 500, 'overlayShow': true });
 		});
 	</script>
 	<!--end of head elements for photo gallery-->
+	<!--Beginning of js credit card validation-->
+	<script type="text/javascript" src="credit_card/creditcard.js"></script>
+	<script type="text/javascript">
+	function testCreditCard ()
+	{
+		if (checkCreditCard (document.getElementById('CardNumber').value,document.getElementById('CardType').value))
+		{
+			alert ("Credit card has a valid format")
+		}
+		else {alert (ccErrors[ccErrorNo])};
+	}
+	</script>
+	<!--End of js credit card validation-->
 	<!--Beginning of stripe info-->
 	<script type="text/javascript" src="https://js.stripe.com/v1/"></script>
 	<script type="text/javascript">
