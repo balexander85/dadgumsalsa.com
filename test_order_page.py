@@ -67,7 +67,7 @@ print driver.title
 
 current_time()
 print "|||||||||||||||||||||||||||||||||||||||||||||||||||||||"
-driver.get("http://localhost/brianalexander/dev.dadgumsalsa.com/")
+driver.get("http://localhost/dev.dadgumsalsa.com/")
 
 #raw_input()
 click_order()
