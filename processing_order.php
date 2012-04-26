@@ -4,7 +4,7 @@
   include "form_info.php";
 
   if ($_POST) {
-    Stripe::setApiKey("a49cCmr3rdkXurgHSdoiMWAr9WWsiGNG");
+    Stripe::setApiKey("dhkYkhcDnJvCR3WIJ5BLsLDDJJAmwWYE");
     $error = '';
     $success = '';
     try {

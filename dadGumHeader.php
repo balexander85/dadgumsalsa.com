@@ -78,23 +78,13 @@ if (preg_match($blog_pattern, $urlValue)) {
 	</script>
 	<!--end of head elements for photo gallery-->
 	<!--Beginning of js credit card validation-->
-	<script type="text/javascript" src="credit_card/creditcard.js"></script>
-	<script type="text/javascript">
-	function testCreditCard ()
-	{
-		if (checkCreditCard (document.getElementById('CardNumber').value,document.getElementById('CardType').value))
-		{
-			alert ("Credit card has a valid format")
-		}
-		else {alert (ccErrors[ccErrorNo])};
-	}
-	</script>
+	
 	<!--End of js credit card validation-->
 	<!--Beginning of stripe info-->
 	<script type="text/javascript" src="https://js.stripe.com/v1/"></script>
 	<script type="text/javascript">
 	    // this identifies your website in the createToken call below
-	    Stripe.setPublishableKey('pk_QER18kLZvhxEoM0oNGISon8fM5onr');
+	    Stripe.setPublishableKey('pk_otfY90DnuhFBkkyRnbev0bQvmCV9h');
 
 	    function stripeResponseHandler(status, response) {
 	        if (response.error) {
