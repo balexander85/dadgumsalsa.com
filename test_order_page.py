@@ -71,6 +71,7 @@ driver.get("http://localhost/dev.dadgumsalsa.com/")
 
 #raw_input()
 click_order()
+assert "Dad Gum Salsa | Order Page" in driver.title
 change_size()
 customer_quantity()
 enter_customer_info()

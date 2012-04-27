@@ -15,7 +15,7 @@
       //echo "Salsa Price:", $salsa_price, "<br />";
       //echo "Quantity:", $quantity;
       //exit();
-      Stripe_Charge::create(array("amount" => 1000,
+      Stripe_Charge::create(array("amount" => $amount,
                                   "currency" => "usd",
                                   "card" => $_POST['stripeToken']));
       $success = 'Your payment was successful.';

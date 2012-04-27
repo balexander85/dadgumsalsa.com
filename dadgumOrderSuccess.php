@@ -1,8 +1,8 @@
+<?php include "processing_order.php";?>
+
 <?php include "dadGumHeader.php";?>
 
 <?php 
-// This includes all the info that is submitted through the form
-include "form_info.php";
 
 //Elements of the email to be sent to the customer saying that their order is being processed
 $subject = "Processing Order";
@@ -29,7 +29,9 @@ $headers .= 'From: Dad Gum Orders<order@dadgumsalsa.com>' . "\r\n";
 $headers .= 'Cc: order@dadgumsalsa.com' . "\r\n";
 $headers .= 'Bcc: brian@dadgumsalsa.com' . "\r\n";
 
-mail ($customer_email, $subject, $message, $headers);
+//echo "About to send that email";
+//exit();
+//mail ($customer_email, $subject, $message, $headers);
 ?>
 
 <div id="order_placed">

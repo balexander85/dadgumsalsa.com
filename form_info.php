@@ -34,7 +34,7 @@ if ($_POST) {
 	$numbers_only = numbers_only($customer_phone);
 	$numbers_of_digits = strlen($numbers_only);
 	if ($numbers_of_digits != 10)
-		die("Please enter a valid phone number with area code, e.g.(512) 469-9777");
+		die("Please enter a valid phone number with area code, e.g.(512) 555-5555");
 	//validating credit card #
 }
 
