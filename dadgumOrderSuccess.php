@@ -29,9 +29,10 @@ $headers .= 'From: Dad Gum Orders<order@dadgumsalsa.com>' . "\r\n";
 $headers .= 'Cc: order@dadgumsalsa.com' . "\r\n";
 $headers .= 'Bcc: brian@dadgumsalsa.com' . "\r\n";
 
-//echo "About to send that email";
-//exit();
-//mail ($customer_email, $subject, $message, $headers);
+
+mail ($customer_email, $subject, $message, $headers);
+echo "Email Sent!";
+exit();
 ?>
 
 <div id="order_placed">
