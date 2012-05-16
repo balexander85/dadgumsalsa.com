@@ -2,8 +2,6 @@
 
 
 <div id="menuBox">
-
-<div id="image_map">
 <!--
 <a href="dadgumAbout.php" id="link1">1
 <span class="freshRollover">
@@ -16,18 +14,17 @@
 <img alt="Dad Gum Photo Blog" src="menu_items/blog_Menu.png" />
 </span>
 </a>
-
-<a href="dadgumOrder.php" id="link3">3
-<span class="freshRollover">
-<img alt="Order Dad Gum" src="menu_items/order_Menu.png" />
-</span>
-</a>
 -->
-<a href="dadgumGallery.php" id="link4">
-<span class="freshRollover">
-<img alt="Fresh Rollover" src="menu_items/photo_Gallery.png" />
-</span>
+<div class="menuLink" id="order_MenuLink">
+<a href="dadgumOrder.php" class="linkopacity" name="order_MenuLink">
+<img alt="Order Dad Gum" src="menu_items/order_Menu.png" />
 </a>
+</div>
+<div class="menuLink" id="gallery_MenuLink">
+<a href="dadgumGallery.php" class="linkopacity">
+<img alt="Fresh Rollover" src="menu_items/photo_Gallery.png" />
+</a>
+</div>
 <!--
 <a href="#nogo" id="link5">5
 <span class="jap3Rollover">
@@ -47,8 +44,6 @@
 </span>
 </a>
 -->
-</div> 
-
 </div>
 
 

@@ -6,7 +6,7 @@
 
 <div class="shadow">
 <div class="post">
-<h1 class="post-title">Dad Gum Salsa: Label</h1>
+<h1 class="post-title">Dad Gum Salsa</h1>
 
 <ul class="post-info">
 <li>
@@ -18,9 +18,7 @@
 <span class="image-post">
 <img class="image-post" alt="label" src="images/comeandtakeit.png" title="Come and Take It" />
 <center>
-<p>
-This is on the about page.
-</p>
+<p></p>
 </center>
 </span>
 
