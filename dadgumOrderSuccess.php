@@ -31,8 +31,8 @@ $headers .= 'Bcc: brian@dadgumsalsa.com' . "\r\n";
 
 
 mail ($customer_email, $subject, $message, $headers);
-echo "Email Sent!";
-exit();
+//echo "Email Sent!";
+//exit();
 ?>
 
 <div id="order_placed">
