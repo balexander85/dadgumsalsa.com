@@ -36,6 +36,11 @@ a:active {color:red;}  /* selected link */
 	width: 975px;
 }
 /*End of header details*/
+#twitter {
+	position: relative;
+	top: 7px;
+	right: -775px;
+}
 /*Start of footer details*/
 #footerPage {
 	margin: .5em;
