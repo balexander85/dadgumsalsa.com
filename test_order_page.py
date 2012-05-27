@@ -19,15 +19,21 @@ def customer_quantity():
 	
 def enter_customer_info():
 	# find the element that's name attribute is Email (username box)
-	first_name_box = driver.find_element_by_name("firstname")
-	last_name_box = driver.find_element_by_name("lastname")
+	full_name_box = driver.find_element_by_name("fullname")
 	email_box = driver.find_element_by_name("email")
-	phone_box = driver.find_element_by_name("phone")
+	#phone_box = driver.find_element_by_name("phone")
+	address_box = driver.find_element_by_name("address")
+	city_box = driver.find_element_by_name("city")
+	state_box = driver.find_element_by_name("state")
+	zip_box = driver.find_element_by_name("zipcode")
 	# type in the user name
-	first_name_box.send_keys("Brian")
-	last_name_box.send_keys("Alexander")
+	full_name_box.send_keys("Brian Alexander")
 	email_box.send_keys("balexander04@gmail.com")
-	phone_box.send_keys("214-762-5564")
+	address_box.send_keys("2901 Barton Skyway #1201")
+	city_box.send_keys("Austin")
+	state_box.send_keys("TX")
+	zip_box.send_keys("78746")
+	#phone_box.send_keys("214-762-5564")
 
 def enter_customer_credit():
 	credit_box = driver.find_element_by_class_name("card-number")
@@ -72,7 +78,7 @@ driver.get("http://localhost/dev.dadgumsalsa.com/")
 #raw_input()
 click_order()
 assert "Dad Gum Salsa | Order Page" in driver.title
-change_size()
+#change_size()
 customer_quantity()
 enter_customer_info()
 enter_customer_credit()
