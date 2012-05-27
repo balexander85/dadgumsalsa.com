@@ -12,20 +12,6 @@ $blog_pattern  = '/blog/i';
 $order_pattern  = '/order./i';
 $order_success_pattern = '/ordersuccess/i';
 $gallery_pattern = '/gallery/i';
-/*
-echo "<pre>";
-print_r($_SERVER);
-echo "url value";
-echo $urlValue;
-echo "<br />";
-echo "blog match: ";
-echo preg_match($blog_pattern, $urlValue);
-echo "<br />";
-echo "about match: ";
-echo preg_match($about_pattern, $urlValue);
-echo "<br />";
-die();
-*/
 
 if (preg_match($blog_pattern, $urlValue)) {
 	$page = "Photo Blog";

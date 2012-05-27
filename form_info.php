@@ -12,10 +12,6 @@ $quart = 1299;
 
 //Assigns and validates the customer's information including salsa size and the number of jars selected
 if ($_POST) {
-	//CURRENTLY ONLY SELLING PINTS- validating that a user selects a size
-	//$salsa_size = $_POST["salsa-size"];
-	//if ($salsa_size == NULL)
-	//	die("Please Select Size");
 	//validating that a user enters a quantity
 	$quantity = $_POST["quantity"];
 	if (!preg_match("/\d+/",$quantity))
@@ -40,6 +36,10 @@ if ($_POST) {
 	$customer_zip = $_POST["zipcode"];
 	if ($customer_zip == NULL)
 		die("Please enter your zip code.");
+	//CURRENTLY ONLY SELLING PINTS- validating that a user selects a size
+	//$salsa_size = $_POST["salsa-size"];
+	//if ($salsa_size == NULL)
+	//	die("Please Select Size");
 	//CURRENTLY NOT TAKING PHONE NUMBERS BUT WANT TO KEEP THE VALIDATION CODE FOR FUTURE REF -validating phone number
 	//$customer_phone = $_POST["phone"];
 	//$numbers_only = numbers_only($customer_phone);

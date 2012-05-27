@@ -1,5 +1,3 @@
-
-
 <?php include "dadGumHeader.php";?>
 
 <div id="order">
