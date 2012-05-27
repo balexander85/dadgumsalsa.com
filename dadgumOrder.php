@@ -13,40 +13,44 @@
 	<div>
 	<h1>Welcome to the Dad Gum Order Page</h1>
 	<p class="paragraph">Please fill in the form below completely and then press Submit Payment<p/>
-	<p id="note">Note: I will only fill orders that I can hand deliver at the moment, I will try to work on shipping orders soon.</p>
 	<br />
 	</div>
 	<div class="form-row">
+		<label>Pint $6.99 - </label>
+		<!--Right now only doing one size
 		<label>Salsa Size:</label>
 		<select name="salsa-size">
 		<option value="" name="">Please Select Size</option>
 		<option value="half-pint" name="half-pint">Half Pint ($5.99)</option>
 		<option value="pint" name="pint">Pint ($7.99)</option>
 		<option value="quart" name="quart">Quart ($12.99)</option>
-		</select>
-		<label>Quantity</label>
+		</select>-->
+		<label>Qty</label>
 		<input type="text" name="quantity" />
 	</div>
 	<br />
-	<div class="form-row">
-		<label>First name</label>
-		<input type="text" name="firstname" />
-		<label>Last name</label>
-		<input type="text" name="lastname" />
-	</div>
-	<div class="form-row">
+    <div class="customer_info">
+		<label>Full Name</label>
+		<input type="text" name="fullname" />
 		<label>Email</label>
 		<input type="text" name="email" />
-        <label>Phone</label>
-		<input type="text" name="phone" />
+		<br />
+    	<label>Address</label>
+		<input type="text" name="address" size="35"/>
+		<br />
+		<label>City</label>
+		<input type="text" name="city" />
+        <label>State</label>
+		<input type="text" name="state" size="2" maxlength="2"/>
+		<label>Zip Code</label>
+		<input type="text" name="zipcode" />
     </div>
     <br />
     <!-- Beginning of Credit Card Info-->
-    <div class="form-row">
+    <div class="card_info">
         <label>Card Number</label>
         <input type="text" size="20" autocomplete="off" class="card-number" id="CardNumber" />
-    </div>
-    <div class="form-row">
+		<br />
     	<label>Card Type</label>
 		<select tabindex="11" id="CardType">
 		<option value="AmEx">American Express</option>
@@ -63,12 +67,10 @@
 		<option value="VisaElectron">Visa Electron</option>
 		<option value="LaserCard">Laser</option>
 		</select>
-    </div>
-    <div class="form-row">
+		<br />
         <label>CVC</label>
         <input type="text" size="4" autocomplete="off" class="card-cvc" />
-    </div>
-    <div class="form-row">
+        <br />
         <label>Expiration (MM/YYYY)</label>
         <select name="ccExpM" class="card-expiry-month">
 		<?php

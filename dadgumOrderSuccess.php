@@ -4,6 +4,7 @@
 
 <?php 
 
+$salsa_size = "pint";
 //Elements of the email to be sent to the customer saying that their order is being processed
 $subject = "Processing Order";
 if ($quantity != "1")
@@ -12,7 +13,7 @@ $message = "<html>
 <head></head>
 <body>
 <h1>Thank you for ordering salsa from Dad Gum Salsa Co.</h1>
-<pre>Dear $customer_first $customer_last,
+<pre>Dear $customer_name,
      
      Thanks again for ordering from DGS. This is only a confirmation that you ordered $quantity $salsa_size of salsa. 
 You will receive an email shortly informing you when you should expect to receive your salsa. If anything does 
@@ -41,7 +42,7 @@ mail ($customer_email, $subject, $message, $headers);
 
 <h1>Thank you for ordering salsa from Dad Gum Salsa Co.</h1>
 <pre style="color: #FFFFFF">
-Dear <?php echo $customer_first, " ", $customer_last; ?>,
+Dear <?php echo $customer_name; ?>,
 
 Thanks again for ordering from DGS. This is only a confirmation that you ordered <?php echo $quantity, " ", $salsa_size;?> of salsa. 
 You will receive an email shortly informing you when you should expect to receive your salsa. If anything does not look correct or 

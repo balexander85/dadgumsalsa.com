@@ -19,11 +19,6 @@ a:active {color:red;}  /* selected link */
 	color: #FFFFFF;
 	font-size: 16px;
 }
-#note{
-	color: #E6E600;
-	margin: .5em;
-	font-size: 20px;
-}
 .page_Pos {
 	background-repeat:no-repeat;
 	background-position:center top;
