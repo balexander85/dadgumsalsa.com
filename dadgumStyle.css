@@ -38,8 +38,11 @@ a:active {color:red;}  /* selected link */
 /*End of header details*/
 #twitter {
 	position: relative;
+	margin: .25em;
+	width: 254px;
 	top: 7px;
-	right: -775px;
+	left: 745px;
+/*	border: 4px solid #FF3300;*/
 }
 /*Start of footer details*/
 #footerPage {
@@ -133,7 +136,7 @@ div.transbox p, h2 {
 	position: relative;
 	background-position: center top;
 	margin: .25em;
-	height: 275px;
+	height: 250px;
 	width: 975px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
