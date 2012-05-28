@@ -128,35 +128,36 @@ div.transbox p, h2 {
 }
 /*End of CSS for dadgumAbout.php*/
 /*Beginining of dadgumOrder.php*/
-#order {
+#order_photo {
 	background: url('images/dadgum_tomato.png') no-repeat;
 	position: relative;
 	background-position: center top;
-	margin: -.5em;
+	margin: .25em;
 	height: 275px;
 	width: 975px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
+	/*border: 4px solid #FF3300;*/
 }
-#payment-form {
+#order_form {
 	color: #FFFFFF;
 	position: relative;
-	background-position: center top;
-	margin: .5em;
-	height: 350px;
+	margin: .25em;
+	height: 295px;
 	width: 975px;
+	background-position: center top;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
-	/*border: 1px solid #FFFFFF;*/
+	/*border: 4px solid #FF3300;*/
 }
 #order_placed {
 	background: url('images/dadgum_bell_red.png') no-repeat;
 	color: #FFFFFF;
 	position: relative;
 	background-position: center top;
-	margin: .5em;
+	margin: .25em;
 	height: 275px;
 	width: 975px;
 	-moz-border-radius: 10px;
