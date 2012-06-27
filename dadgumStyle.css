@@ -16,7 +16,7 @@ a:hover {color:#858585;} /* mouse over link */
 a:active {color:red;}  /* selected link */
 
 .paragraph{
-	color: #FFFFFF;
+	color: #000000;
 	font-size: 16px;
 }
 .page_Pos {
@@ -143,7 +143,7 @@ div.transbox p, h2 {
 	border-radius: 10px;
 }
 #payment-form {
-	color: #FFFFFF;
+	background-color: #FFFFFF;
 	position: relative;
 	background-position: center top;
 	margin: .5em;
@@ -152,7 +152,7 @@ div.transbox p, h2 {
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
-	/*border: 1px solid #FFFFFF;*/
+	border: 1px solid #FFFFFF;
 }
 #order_placed {
 	background: url('images/dadgum_bell_red.png') no-repeat;

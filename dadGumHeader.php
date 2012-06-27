@@ -64,7 +64,19 @@ if (preg_match($blog_pattern, $urlValue)) {
 	</script>
 	<!--end of head elements for photo gallery-->
 	<!--Beginning of js credit card validation-->
-	
+	<script type="text/javascript">
+		function validateForm()
+		{
+			var x=document.forms["orderForm"]["email"].value;
+			var atpos=x.indexOf("@");
+			var dotpos=x.lastIndexOf(".");
+			if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+			  {
+				  alert("Not a valid e-mail address");
+				  return false;
+			  }
+		}
+	</script>
 	<!--End of js credit card validation-->
 	<!--Beginning of stripe info-->
 	<script type="text/javascript" src="https://js.stripe.com/v1/"></script>
@@ -132,14 +144,14 @@ if (preg_match($blog_pattern, $urlValue)) {
 <div id="twitter">
 <a href="https://twitter.com/dadgumsalsa" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @dadgumsalsa</a>
 <script>
-!function(d,s,id) {
-	var js,fjs=d.getElementsByTagName(s)[0];
-	if(!d.getElementById(id)) {
-		js=d.createElement(s);js.id=id;
-		js.src="//platform.twitter.com/widgets.js";
-		fjs.parentNode.insertBefore(js,fjs);
-	}
-}(document,"script","twitter-wjs");
+	!function(d,s,id) {
+		var js,fjs=d.getElementsByTagName(s)[0];
+		if(!d.getElementById(id)) {
+			js=d.createElement(s);js.id=id;
+			js.src="//platform.twitter.com/widgets.js";
+			fjs.parentNode.insertBefore(js,fjs);
+		}
+	}(document,"script","twitter-wjs");
 </script>
 
 <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.dadgumsalsa.com" 

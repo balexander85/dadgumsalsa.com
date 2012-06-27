@@ -4,10 +4,11 @@
 
 </div>
 
-<!-- to display errors returned by createToken -->
-<span class="payment-errors"><?= $error ?></span>
-<span class="payment-success"><?= $success ?></span>
-<form action="dadgumOrderSuccess.php" method="POST" id="payment-form">
+
+<form name="orderForm" action="dadgumOrderSuccess.php" onsubmit="return validateForm();" method="POST" id="payment-form">
+	<!-- to display errors returned by createToken -->
+	<span class="payment-errors"><?= $error ?></span>
+	<span class="payment-success"><?= $success ?></span>
 	<div>
 	<h1>Welcome to the Dad Gum Order Page</h1>
 	<p class="paragraph">Please fill in the form below completely and then press Submit Payment<p/>
