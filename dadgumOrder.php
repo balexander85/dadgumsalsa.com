@@ -5,7 +5,7 @@
 </div>
 
 
-<form name="orderForm" action="dadgumOrderSuccess.php" onsubmit="return validateForm();" method="POST" id="payment-form">
+<form name="orderForm" action="dadgumOrderSuccess.php" method="post" id="payment-form">
 	<!-- to display errors returned by createToken -->
 	<span class="payment-errors"><?= $error ?></span>
 	<span class="payment-success"><?= $success ?></span>
@@ -25,30 +25,30 @@
 		<option value="quart" name="quart">Quart ($12.99)</option>
 		</select>-->
 		<label>Qty</label>
-		<input type="text" name="quantity" />
+		<input type="text" name="quantity" required="required"/>
 	</div>
 	<br />
     <div class="customer_info">
 		<label>Full Name</label>
-		<input type="text" name="fullname" />
+		<input type="text" name="fullname" required="required" />
 		<label>Email</label>
-		<input type="text" name="email" />
+		<input type="text" name="email" required="required" />
 		<br />
     	<label>Address</label>
-		<input type="text" name="address" size="35"/>
+		<input type="text" name="address" size="35" required="required" />
 		<br />
 		<label>City</label>
-		<input type="text" name="city" />
+		<input type="text" name="city" required="required" />
         <label>State</label>
-		<input type="text" name="state" size="2" maxlength="2"/>
+		<input type="text" name="state" size="2" maxlength="2" required="required" />
 		<label>Zip Code</label>
-		<input type="text" name="zipcode" />
+		<input type="text" name="zipcode" required="required" />
     </div>
     <br />
     <!-- Beginning of Credit Card Info-->
     <div class="card_info">
         <label>Card Number</label>
-        <input type="text" size="20" autocomplete="off" class="card-number" id="CardNumber" />
+        <input type="text" size="20" autocomplete="off" class="card-number" id="CardNumber" required="required" />
 		<br />
     	<label>Card Type</label>
 		<select tabindex="11" id="CardType">
@@ -68,7 +68,7 @@
 		</select>
 		<br />
         <label>CVC</label>
-        <input type="text" size="4" autocomplete="off" class="card-cvc" />
+        <input type="text" size="4" autocomplete="off" class="card-cvc" required="required" />
         <br />
         <label>Expiration (MM/YYYY)</label>
         <select name="ccExpM" class="card-expiry-month">
