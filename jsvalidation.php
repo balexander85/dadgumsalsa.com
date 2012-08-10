@@ -1,12 +1,7 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <script type="text/javascript" src="./js/orderFormValidation.js"></script>
-<script type="text/javascript" src="https://js.stripe.com/v1/"></script>
-<script type="text/javascript">
-    // this identifies your website in the createToken call below
-    Stripe.setPublishableKey('YOUR_PUBLISHABLE_KEY');
-    ...
-</script>
 </head>
 <body>
 
@@ -23,30 +18,30 @@
 	<div class="form-row">
 		<label>Pint $5 - </label>
 		<label>Qty</label>
-		<input type="text" id="quantity" required="required"/>
+		<input type="text" id="quantity"/>
 	</div>
 	<br />
     <div class="customer_info">
 		<label>Full Name</label>
-			<input type="text" id="fullname" required="required" />
+			<input type="text" id="fullname" />
 		<label>Email</label>
-			<input type="text" id="email" required="required" />
+			<input type="text" id="email" />
 			<br />
     	<label>Address</label>
-			<input type="text" id="address" size="35" required="required" />
+			<input type="text" id="address" size="35" />
 			<br />
 		<label>City</label>
-			<input type="text" id="city" required="required" />
+			<input type="text" id="city" />
         <label>State</label>
-			<input type="text" id="state" size="2" maxlength="2" required="required" />
+			<input type="text" id="state" size="2" maxlength="2" />
 		<label>Zip Code</label>
-			<input type="text" id="zipcode" required="required" />
+			<input type="text" id="zipcode" />
     </div>
     <br />
     <!-- Beginning of Credit Card Info-->
     <div class="card_info">
         <label>Card Number</label>
-        <input id="card-number" type="text" maxlength="24" size="24" autocomplete="off" required="required" class="card-number"/>
+        <input id="card-number" type="text" maxlength="24" size="24" autocomplete="off" class="card-number"/>
 		<br />
     	<label>Card Type</label>
 		<select tabindex="11" id="CardType">
@@ -57,7 +52,7 @@
 		</select>
 		<br />
         <label>CVC</label>
-        <input id="card-cvc" type="text" size="4" autocomplete="off" required="required" class="card-cvc"/>
+        <input id="card-cvc" type="text" size="4" autocomplete="off" class="card-cvc"/>
         <br />
         <label>Expiration (MM/YYYY)</label>
         <select id="card-expiry-month" class="card-expiry-month">
@@ -81,7 +76,7 @@
 		</select>
     </div>
     <br />
-    <button type="submit" class="submit-button">Submit Payment</button>
+    <button type="submit" class="submit-button" id="submit-button">Submit Payment</button>
 </form>
 
 </body>
