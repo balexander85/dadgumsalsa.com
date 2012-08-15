@@ -6,7 +6,7 @@
 <body>
 
 <!--return validateForm();  method="POST" id="payment-form"-->
-<form name="orderForm" action="/dev.dadgumsalsa.com/dadgumOrderSuccess.php" onsubmit="return validateForm();" method="POST">
+<form name="orderForm" action="/dev.dadgumsalsa.com/dadgumOrderSuccess.php" onsubmit="return validateOrder();" method="POST">
 	<!-- to display errors returned by createToken -->
 	<span class="payment-errors"><?= $error ?></span>
 	<span class="payment-success"><?= $success ?></span>
@@ -44,7 +44,7 @@
         <input id="card-number" type="text" maxlength="24" size="24" autocomplete="off" class="card-number"/>
 		<br />
     	<label>Card Type</label>
-		<select tabindex="11" id="card-type">
+		<select tabindex="11" id="card-name">
 		<option value="NULL">Card Type</option>
 		<option value="Visa">Visa</option>
 		<option value="AmEx">American Express</option>
