@@ -184,7 +184,7 @@ function validateCredit()
 	}
 
 	// Ensure that the user has provided a credit card number
-  	if (card_number.length == 0)
+  	if (len == 0)
   	{
      	ccErrorNo = 1;
      	return false; 
@@ -196,42 +196,42 @@ function validateCredit()
 	    return false; 
 	}
 	// Now check the modulus 10 check digit - if required
-	// if (cards[cardType].checkdigit) 
-	// {
-	// 	var checksum = 0;                                  // running checksum total
-	// 	var mychar = "";                                   // next char to process
-	// 	var j = 1;                                         // takes value of 1 or 2
+	if (cards[cardType].checkdigit) 
+	{
+		var checksum = 0;                                  // running checksum total
+		var mychar = "";                                   // next char to process
+		var j = 1;                                         // takes value of 1 or 2
 
-	// 	// Process each digit one by one starting at the right
-	// 	var calc;
-	// 	for (i = card_number.length - 1; i >= 0; i--) 
-	// 	{
+		// Process each digit one by one starting at the right
+		var calc;
+		for (i = card_number.length - 1; i >= 0; i--) 
+		{
 
-	// 		// Extract the next digit and multiply by 1 or 2 on alternative digits.
-	// 		calc = Number(card_number.charAt(i)) * j;
+			// Extract the next digit and multiply by 1 or 2 on alternative digits.
+			calc = Number(card_number.charAt(i)) * j;
 
-	// 		// If the result is in two digits add 1 to the checksum total
-	// 		if (calc > 9) 
-	// 		{
-	// 			checksum = checksum + 1;
-	// 			calc = calc - 10;
-	// 		}
+			// If the result is in two digits add 1 to the checksum total
+			if (calc > 9) 
+			{
+				checksum = checksum + 1;
+				calc = calc - 10;
+			}
 
-	// 		// Add the units element to the checksum total
-	// 		checksum = checksum + calc;
+			// Add the units element to the checksum total
+			checksum = checksum + calc;
 
-	// 		// Switch the value of j
-	// 		if (j ==1) {j = 2} else {j = 1};
-	// 	} 
+			// Switch the value of j
+			if (j ==1) {j = 2} else {j = 1};
+		} 
 
-	// 	// All done - if checksum is divisible by 10, it is a valid modulus 10.
-	// 	// If not, report an error.
-	// 	if (checksum % 10 != 0)  
-	// 	{
-	// 		ccErrorNo = 3;
-	// 		return false; 
-	// 	}
-	// }  	
+		// All done - if checksum is divisible by 10, it is a valid modulus 10.
+		// If not, report an error.
+		if (checksum % 10 != 0)  
+		{
+			ccErrorNo = 3;
+			return false; 
+		}
+	}  	
 	// Check it's not a spam number
   	if (card_number == '5490997771092064') 
   	{ 

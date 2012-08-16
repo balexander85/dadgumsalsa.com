@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<script type="text/javascript" src="./js/orderFormValidation.js"></script>
+<script type="text/javascript" src="./credit_card/orderFormValidation.js"></script>
 </head>
 <body>
 
-<!--return validateForm();  method="POST" id="payment-form"-->
-<form name="orderForm" action="/dev.dadgumsalsa.com/dadgumOrderSuccess.php" onsubmit="return validateOrder();" method="POST">
+
+<form name="orderForm" id="payment-form" action="/dev.dadgumsalsa.com/dadgumOrderSuccess.php" onsubmit="return validateOrder();" method="POST">
 	<!-- to display errors returned by createToken -->
 	<span class="payment-errors"><?= $error ?></span>
 	<span class="payment-success"><?= $success ?></span>
@@ -43,13 +43,22 @@
         <label>Card Number</label>
         <input id="card-number" type="text" maxlength="24" size="24" autocomplete="off" class="card-number"/>
 		<br />
-    	<label>Card Type</label>
+    	<label>Card Name</label>
 		<select tabindex="11" id="card-name">
-		<option value="NULL">Card Type</option>
+		<option value="NULL">Card Name</option>
 		<option value="Visa">Visa</option>
 		<option value="AmEx">American Express</option>
 		<option value="Discover">Discover</option>
 		<option value="MasterCard">MasterCard</option>
+		<option value="CarteBlanche">Carte Blanche</option>
+		<option value="DinersClub">Diners Club</option>
+		<option value="EnRoute">enRoute</option>
+		<option value="JCB">JCB</option>
+		<option value="Maestro">Maestro</option>
+		<option value="Solo">Solo</option>
+		<option value="Switch">Switch</option>
+		<option value="VisaElectron">Visa Electron</option>
+		<option value="LaserCard">Laser</option>
 		</select>
 		<br />
         <label>CVC</label>
