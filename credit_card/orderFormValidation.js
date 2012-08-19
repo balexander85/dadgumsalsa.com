@@ -33,57 +33,62 @@ fErrors [6] = "Not a valid zip code, only 5 digit zips, e.g. 78745";
 
 function validateOrder()
 {
-	if (!validateForm())
+	// if (!validateForm())
+	// {
+	// 	alert(fErrors[fErrorNo]);
+	// 	return false;
+	// }
+	// if (!validateCredit())
+	// {
+	// 	alert(ccErrors[ccErrorNo]);
+	// 	return false;
+	// }
+	if (!stripeFunc())
 	{
-		alert(fErrors[fErrorNo]);
-		return false;
-	}
-	if (!validateCredit())
-	{
-		alert(ccErrors[ccErrorNo]);
+		alert('stripe failed');
 		return false;
 	}
 
 }
 function validateForm()
 {
-	var quantity = document.forms["orderForm"]["quantity"].value;
+	var quantity = document.forms["payment-form"]["quantity"].value;
 	if (!quantity.match(/^\d+$/))
 	{
 		fErrorNo = 0;
 		return false;
 	}
-	var full_name = document.forms["orderForm"]["fullname"].value;
+	var full_name = document.forms["payment-form"]["fullname"].value;
 	if (!full_name.match(/[A-Za-z]+/))
 	{
 		fErrorNo = 1;
 		return false;
 	}
-	var email = document.forms["orderForm"]["email"].value;
+	var email = document.forms["payment-form"]["email"].value;
 	if (!email.match(/.+@.+\.[a-z]+/))
 	{
 		fErrorNo = 2;
 		return false;
 	}
-	var address = document.forms["orderForm"]["address"].value;
+	var address = document.forms["payment-form"]["address"].value;
 	if (!address.match(/\S+/))
 	{
 		fErrorNo = 3;
 		return false;
 	}
-	var city = document.forms["orderForm"]["city"].value;
+	var city = document.forms["payment-form"]["city"].value;
 	if (!city.match(/[A-Za-z]+/))
 	{
 		fErrorNo = 4;
 		return false;
 	}
-	var state = document.forms["orderForm"]["state"].value;
+	var state = document.forms["payment-form"]["state"].value;
 	if (!state.match(/^[A-Za-z]{2}$/))
 	{
 		fErrorNo = 5;
 		return false;
 	}
-	var zip_code = document.forms["orderForm"]["zipcode"].value;
+	var zip_code = document.forms["payment-form"]["zipcode"].value;
 	if (!zip_code.match(/^\d{5}$/))
 	{
 		fErrorNo = 6;
@@ -95,12 +100,12 @@ function validateForm()
 
 function validateCredit()
 {
-	var card_number = document.forms["orderForm"]["card-number"].value;
+	var card_number = document.forms["payment-form"]["card-number"].value;
 	var len 	= card_number.length;
-	var card_name = document.forms["orderForm"]["card-name"].value;
-	var card_cvc = document.forms["orderForm"]["card-cvc"].value;
-	var month_exp = document.forms["orderForm"]["card-expiry-month"].value;
-	var year_exp = document.forms["orderForm"]["card-expiry-year"].value;
+	var card_name = document.forms["payment-form"]["card-name"].value;
+	var card_cvc = document.forms["payment-form"]["card-cvc"].value;
+	var month_exp = document.forms["payment-form"]["card-expiry-month"].value;
+	var year_exp = document.forms["payment-form"]["card-expiry-year"].value;
 
 	// Array to hold the permitted card characteristics
 	var cards = new Array();
@@ -303,4 +308,45 @@ function validateCredit()
 	return true;
 
 }
+function stripeFunc()
+{
+	//Beginning of stripe info
+	// this identifies your website in the createToken call below
+	Stripe.setPublishableKey('pk_0D3gylaUGbd2faTL8wYRu1htuBR4k');
 
+    function stripeResponseHandler(status, response) {
+        if (response.error) {
+            // re-enable the submit button
+            $('.submit-button').removeAttr("disabled");
+            // show the errors on the form
+            $(".payment-errors").html(response.error.message);
+        } else {
+            var form$ = $("#payment-form");
+            // token contains id, last4, and card type
+            var token = response['id'];
+            // insert the token into the form so it gets submitted to the server
+            form$.append("<input type='hidden' name='stripeToken' value='" + token + "' />");
+            // and submit
+            form$.get(0).submit();
+        }
+    }
+
+    $(document).ready(function() {
+        $("#payment-form").submit(function(event) {
+            // disable the submit button to prevent repeated clicks
+            $('.submit-button').attr("disabled", "disabled");
+
+            // createToken returns immediately - the supplied callback submits the form if there are no errors
+            Stripe.createToken({
+                number: $('.card-number').val(),
+                cvc: $('.card-cvc').val(),
+                exp_month: $('.card-expiry-month').val(),
+                exp_year: $('.card-expiry-year').val()
+            }, stripeResponseHandler);
+            return false; // submit from callback
+        });
+    });
+	//End of stripe info
+
+	return true;
+}

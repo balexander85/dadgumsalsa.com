@@ -15,31 +15,32 @@ if ($_POST) {
 	// validating that a user enters a quantity
 	$quantity = $_POST["quantity"];
 	if (!preg_match("/\d+/",$quantity))
-		die("Please enter a valid number of salsa jars."." ".$quantity);
+		$error = 'Please enter a valid number of salsa jars.';
+		//die("Please enter a valid number of salsa jars."." ".$quantity);
 	// validating that user has entered a name
-	$customer_name = $_POST["fullname"];
-	if ($customer_name == NULL)
-		die("Please enter your full name.");
-	// validating that user has entered a valid email
-	$customer_email = $_POST['email'];
-	if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/",$customer_email))
-		die("E-mail address not valid");
-	// validating that customer has filled out their address
-	$customer_addr = $_POST["address"];
-	if ($customer_addr == NULL)
-		die("Please enter your full address.");
-	// validating that customer has filled out their city
-	$customer_city = $_POST["city"];
-	if ($customer_city == NULL)
-		die("Please fill in city.");
-	// validating that customer has filled out their state
-	$customer_state = $_POST["state"];
-	if ($customer_state == NULL)
-		die("Please enter your state.");
-	// validating that customer has filled out their zip code
-	$customer_zip = $_POST["zipcode"];
-	if ($customer_zip == NULL)
-		die("Please enter a valid zip code.");
+	// $customer_name = $_POST["fullname"];
+	// if ($customer_name == NULL)
+	// 	die("Please enter your full name.");
+	// // validating that user has entered a valid email
+	// $customer_email = $_POST['email'];
+	// if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/",$customer_email))
+	// 	die("E-mail address not valid");
+	// // validating that customer has filled out their address
+	// $customer_addr = $_POST["address"];
+	// if ($customer_addr == NULL)
+	// 	die("Please enter your full address.");
+	// // validating that customer has filled out their city
+	// $customer_city = $_POST["city"];
+	// if ($customer_city == NULL)
+	// 	die("Please fill in city.");
+	// // validating that customer has filled out their state
+	// $customer_state = $_POST["state"];
+	// if ($customer_state == NULL)
+	// 	die("Please enter your state.");
+	// // validating that customer has filled out their zip code
+	// $customer_zip = $_POST["zipcode"];
+	// if ($customer_zip == NULL)
+	// 	die("Please enter a valid zip code.");
 	//CURRENTLY ONLY SELLING PINTS- validating that a user selects a size
 	//$salsa_size = $_POST["salsa-size"];
 	//if ($salsa_size == NULL)
