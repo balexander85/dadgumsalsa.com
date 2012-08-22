@@ -1,13 +1,12 @@
 /*
-   If a credit card number is invalid, an error reason is loaded into the global ccErrorNo variable. 
-   This can be be used to index into the global error  string array to report the reason to the user 
-   if required:
+   If a credit card number is invalid, an error reason is loaded into the global ccErrorNo variable.
+   This can be be used to index into the global error  string array to report the reason to the user if required:
    
    e.g. if (!checkCreditCard (number, name) alert (ccErrors(ccErrorNo);
 */
 
 var ccErrorNo = 0;
-var ccErrors = new Array ()
+var ccErrors = new Array ();
 
 ccErrors [0] = "Unknown card type";
 ccErrors [1] = "No card number provided";
@@ -20,7 +19,7 @@ ccErrors [7] = "Please select an expiration month.";
 ccErrors [8] = "Please select an expiration year.";
 
 var fErrorNo = 0;
-var fErrors = new Array ()
+var fErrors = new Array ();
 
 fErrors [0] = "Not a valid number of jars";
 fErrors [1] = "Please enter your full name";
@@ -33,22 +32,21 @@ fErrors [6] = "Not a valid zip code, only 5 digit zips, e.g. 78745";
 
 function validateOrder()
 {
-	// if (!validateForm())
-	// {
-	// 	alert(fErrors[fErrorNo]);
-	// 	return false;
-	// }
-	// if (!validateCredit())
-	// {
-	// 	alert(ccErrors[ccErrorNo]);
-	// 	return false;
-	// }
-	if (!stripeFunc())
+	if (!validateForm())
 	{
-		alert('stripe failed');
+		alert(fErrors[fErrorNo]);
 		return false;
 	}
+	if (!validateCredit())
+	{
+		alert(ccErrors[ccErrorNo]);
+		return false;
+	}
+	// if (!stripeFunc())
+	// {
+	// 	alert('stripe failed');
 
+	// }
 }
 function validateForm()
 {
@@ -139,24 +137,24 @@ function validateCredit()
 	             length: "16", 
 	             prefixes: "6011,622,64,65",
 	             checkdigit: true};
-	cards [6] = {name: "JCB", 
-	             length: "16", 
+	cards [6] = {name: "JCB",
+	             length: "16",
 	             prefixes: "35",
 	             checkdigit: true};
-	cards [7] = {name: "enRoute", 
+	cards [7] = {name: "enRoute",
 	             length: "15", 
 	             prefixes: "2014,2149",
 	             checkdigit: true};
-	cards [8] = {name: "Solo", 
-	             length: "16,18,19", 
+	cards [8] = {name: "Solo",
+	             length: "16,18,19",
 	             prefixes: "6334,6767",
 	             checkdigit: true};
 	cards [9] = {name: "Switch", 
 	             length: "16,18,19", 
 	             prefixes: "4903,4905,4911,4936,564182,633110,6333,6759",
 	             checkdigit: true};
-	cards [10] = {name: "Maestro", 
-	             length: "12,13,14,15,16,18,19", 
+	cards [10] = {name: "Maestro",
+	             length: "12,13,14,15,16,18,19",
 	             prefixes: "5018,5020,5038,6304,6759,6761,6762,6763",
 	             checkdigit: true};
 	cards [11] = {name: "VisaElectron", 
@@ -308,44 +306,47 @@ function validateCredit()
 	return true;
 
 }
-function stripeFunc()
+function stripeFunc(status, response)
 {
 	//Beginning of stripe info
-	// this identifies your website in the createToken call below
-	Stripe.setPublishableKey('pk_0D3gylaUGbd2faTL8wYRu1htuBR4k');
+    // this identifies your website in the createToken call below
+    Stripe.setPublishableKey('pk_0D3gylaUGbd2faTL8wYRu1htuBR4k');
 
     function stripeResponseHandler(status, response) {
-        if (response.error) {
-            // re-enable the submit button
-            $('.submit-button').removeAttr("disabled");
-            // show the errors on the form
-            $(".payment-errors").html(response.error.message);
-        } else {
-            var form$ = $("#payment-form");
-            // token contains id, last4, and card type
-            var token = response['id'];
-            // insert the token into the form so it gets submitted to the server
-            form$.append("<input type='hidden' name='stripeToken' value='" + token + "' />");
-            // and submit
-            form$.get(0).submit();
+    	if (response.error) {
+                // re-enable the submit button
+                $('.submit-button').removeAttr("disabled");
+                // show the errors on the form
+                $(".payment-errors").html(response.error.message);
+            } else {
+                var form$ = $("#payment-form");
+                // token contains id, last4, and card type
+                var token = response['id'];
+                // insert the token into the form so it gets submitted to the server
+                form$.append("<input type='hidden' name='stripeToken' value='" + token + "' />");
+                // and submit
+                form$.get(0).submit();
+            }
         }
-    }
 
-    $(document).ready(function() {
-        $("#payment-form").submit(function(event) {
-            // disable the submit button to prevent repeated clicks
-            $('.submit-button').attr("disabled", "disabled");
-
-            // createToken returns immediately - the supplied callback submits the form if there are no errors
-            Stripe.createToken({
-                number: $('.card-number').val(),
-                cvc: $('.card-cvc').val(),
-                exp_month: $('.card-expiry-month').val(),
-                exp_year: $('.card-expiry-year').val()
-            }, stripeResponseHandler);
-            return false; // submit from callback
+        $(document).ready(function() {
+            $("#payment-form").submit(function(event) {
+                // disable the submit button to prevent repeated clicks
+                $('.submit-button').attr("disabled", "disabled");
+                // createToken returns immediately - the supplied callback submits the form if there are no errors
+                Stripe.createToken({
+                    number: $('.card-number').val(),
+                    cvc: $('.card-cvc').val(),
+                    exp_month: $('.card-expiry-month').val(),
+                    exp_year: $('.card-expiry-year').val()
+                }, stripeResponseHandler);
+                return false; // submit from callback
+            });
         });
-    });
+
+        if (window.location.protocol === 'file:') {
+            alert("stripe.js does not work when included in pages served over file:// URLs. Try serving this page over a webserver. Contact support@stripe.com if you need assistance.");
+        }
 	//End of stripe info
 
 	return true;
