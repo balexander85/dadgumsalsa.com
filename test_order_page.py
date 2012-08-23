@@ -78,7 +78,7 @@ print driver.title
 
 current_time()
 print "|||||||||||||||||||||||||||||||||||||||||||||||||||||||"
-driver.get("http://localhost/dev.dadgumsalsa.com/jsvalidation.php")
+driver.get("http://localhost/dev.dadgumsalsa.com/DGSorder.php")
 
 customer_quantity()
 enter_customer_info()
