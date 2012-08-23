@@ -20,6 +20,11 @@
 		<img src="menu_items/DGSorderLink.png" alt="Order Label" />
 		</a>
 	</div>
+	<div id="contactLink">
+		<a class="linkopacity" href="mailto:info@dadgumsalsa.com">
+		<img src="menu_items/DGScontactLink.png" alt="Contact Email" />
+		</a>
+	</div>
 </div>
 
 </div> <!--End of MainFrame div -->

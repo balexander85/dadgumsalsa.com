@@ -9,6 +9,14 @@ body
 	right: 75px;
 /*	bottom: 250px;*/
 }
+#video
+{
+	position: absolute;
+	right: 25px;
+	bottom: 15px;
+	width: 640px;
+	height: 368px;
+}
 #payment-form
 {
 	position: absolute;
@@ -53,15 +61,13 @@ body
 	bottom: 25px;
 	left: 75px;
 	height: 25px;
-	width: 195px;
+	width: 275px;
 }
 #aboutLink
 {
 	position: absolute;
 	height: 25px;
 	width: 65px;
-/*	bottom: 115px;*/
-
 }
 #blogLink
 {
@@ -69,9 +75,6 @@ body
 	height: 25px;
 	width: 50px;
 	left: 73px;
-
-/*	bottom: 105px;*/
-
 }
 #orderLink
 {
@@ -79,8 +82,13 @@ body
 	height: 25px;
 	width: 60px;
 	left: 133px;
-/*	bottom: 115px;*/
-
+}
+#contactLink
+{
+	position: absolute;
+	height: 25px;
+	width: 60px;
+	left: 197px;
 }
 #payment-form
 {
