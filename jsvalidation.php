@@ -30,53 +30,6 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 	 <!-- <script type="text/javascript" src="./credit_card/orderFormValidation.js"></script> -->
 	<script type="text/javascript">
-		function validateForm()
-		{
-			var quantity = document.forms["payment-form"]["quantity"].value;
-			if (!quantity.match(/^\d+$/))
-			{
-				fErrorNo = 0;
-				return false;
-			}
-			var full_name = document.forms["payment-form"]["fullname"].value;
-			if (!full_name.match(/[A-Za-z]+/))
-			{
-				fErrorNo = 1;
-				return false;
-			}
-			var email = document.forms["payment-form"]["email"].value;
-			if (!email.match(/.+@.+\.[a-z]+/))
-			{
-				fErrorNo = 2;
-				return false;
-			}
-			var address = document.forms["payment-form"]["address"].value;
-			if (!address.match(/\S+/))
-			{
-				fErrorNo = 3;
-				return false;
-			}
-			var city = document.forms["payment-form"]["city"].value;
-			if (!city.match(/[A-Za-z]+/))
-			{
-				fErrorNo = 4;
-				return false;
-			}
-			var state = document.forms["payment-form"]["state"].value;
-			if (!state.match(/^[A-Za-z]{2}$/))
-			{
-				fErrorNo = 5;
-				return false;
-			}
-			var zip_code = document.forms["payment-form"]["zipcode"].value;
-			if (!zip_code.match(/^\d{5}$/))
-			{
-				fErrorNo = 6;
-				return false;
-			}
-
-			return true;
-		}
 	    // this identifies your website in the createToken call below
 	    Stripe.setPublishableKey('pk_0D3gylaUGbd2faTL8wYRu1htuBR4k');
 
