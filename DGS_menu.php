@@ -1,7 +1,7 @@
 <div id="menuFrame">
 
 <a href="index.php">
-<img id="pageTitle" src="resources/DGSfrontTitle.png" alt="Dad Gum Salsa Title" />
+<img id="pageTitle" src="menu_items/DGSfrontTitle.png" alt="Dad Gum Salsa Title" />
 </a>
 
 <div id="menuBar">
