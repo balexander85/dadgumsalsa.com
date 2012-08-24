@@ -7,7 +7,7 @@
 
 		<p>Email : <a href="mailto:info@dadgumsalsa.com">info@dadgumsalsa.com</a></p>
 		<p>Twitter : <a href="http://twitter.com/dadgumsalsa">@dadgumsalsa</a></p>
-		<p>Facebook : <a href="http://twitter.com/dadgumsalsa">Dad Gum Salsa</a></p>
+		<p>Facebook : <a href="http://www.facebook.com/dadgumsalsa">Dad Gum Salsa</a></p>
 	</div>
 </div>
 

@@ -44,14 +44,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<link type="image/png" rel="shortcut icon" href="images/tomato_Favicon.png"/>
-<meta name="author" content="Brian Alexander" />
-<meta name="description" content="Dad Gum Salsa Coming Soon!" />
-<meta name="keywords" content="Dad Gum, Salsa, Dad Gum Salsa, Chips and Salsa" />  
-<title><?php print $title; ?></title>
-<!--Cascading Style Sheets for this Dad'Gum Website--> 
-<link rel="stylesheet" type="text/css" href="DGSstyle.css" />
-<script type="text/javascript" src="https://js.stripe.com/v1/"></script>
+    <link type="image/png" rel="shortcut icon" href="images/tomato_Favicon.png"/>
+    <meta name="author" content="Brian Alexander" />
+    <meta name="description" content="Dad Gum Salsa Coming Soon!" />
+    <meta name="keywords" content="Dad Gum, Salsa, Dad Gum Salsa, Chips and Salsa" />  
+    <title><?php print $title; ?></title>
+    <!--Cascading Style Sheets for this Dad'Gum Website--> 
+    <link rel="stylesheet" type="text/css" href="DGSstyle.css" />
+    <script type="text/javascript" src="https://js.stripe.com/v1/"></script>
 	<!-- jQuery is used only for this example; it isn't required to use Stripe -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 	 <!-- <script type="text/javascript" src="./credit_card/orderFormValidation.js"></script> -->
