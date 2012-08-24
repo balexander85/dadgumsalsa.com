@@ -2,7 +2,7 @@
 
 <div id="mainFrame">
 <a class="" href="http://www.google.com">
-<img id="frontImage" src="resources/DGSfrontImage.png" alt="Image Displayed" />
+<img id="frontImage" src="images/DGS_04.png" alt="Index Image" />
 </a>
 </div>
 

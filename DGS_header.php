@@ -1,4 +1,25 @@
 <?php
+    $urlValue = $_SERVER['REQUEST_URI'];
+    $base = "Dad Gum Salsa";
+    $about_pattern = '/about/i';
+    $blog_pattern  = '/blog/i';
+    $order_pattern  = '/order./i';
+    $contact_pattern = '/contact/i';
+
+    if (preg_match($blog_pattern, $urlValue)) {
+        $page = "Photo Blog";
+    } elseif (preg_match($about_pattern, $urlValue)) {
+        $page = "About DGS";
+    } elseif (preg_match($order_pattern, $urlValue)) {
+        $page = "Order Page";
+    } elseif (preg_match($contact_pattern, $urlValue)) {
+        $page = "Contact Info";
+    } else {
+        $page = "Home";
+    }
+
+    $title = $base ." | ". $page;
+
 	require 'stripe-php/lib/Stripe.php';
 
 	if ($_POST) {
@@ -27,7 +48,7 @@
 <meta name="author" content="Brian Alexander" />
 <meta name="description" content="Dad Gum Salsa Coming Soon!" />
 <meta name="keywords" content="Dad Gum, Salsa, Dad Gum Salsa, Chips and Salsa" />  
-<title>New Dad Gum Website</title>
+<title><?php print $title; ?></title>
 <!--Cascading Style Sheets for this Dad'Gum Website--> 
 <link rel="stylesheet" type="text/css" href="DGSstyle.css" />
 <script type="text/javascript" src="https://js.stripe.com/v1/"></script>

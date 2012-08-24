@@ -21,7 +21,7 @@
 		</a>
 	</div>
 	<div id="contactLink">
-		<a class="linkopacity" href="mailto:info@dadgumsalsa.com">
+		<a class="linkopacity" href="DGScontact.php">
 		<img src="menu_items/DGScontactLink.png" alt="Contact Email" />
 		</a>
 	</div>
