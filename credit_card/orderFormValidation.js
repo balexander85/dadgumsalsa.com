@@ -32,21 +32,21 @@ fErrors [6] = "Not a valid zip code, only 5 digit zips, e.g. 78745";
 
 function validateOrder()
 {
-	if (!validateForm())
-	{
-		alert(fErrors[fErrorNo]);
-		return false;
-	}
-	if (!validateCredit())
-	{
-		alert(ccErrors[ccErrorNo]);
-		return false;
-	}
-	// if (!stripeFunc())
+	// if (!validateForm())
 	// {
-	// 	alert('stripe failed');
-
+	// 	alert(fErrors[fErrorNo]);
+	// 	return false;
 	// }
+	// if (!validateCredit())
+	// {
+	// 	alert(ccErrors[ccErrorNo]);
+	// 	return false;
+	// }
+	if (!stripeFunc())
+	{
+		alert('stripe failed');
+
+	}
 }
 function validateForm()
 {
