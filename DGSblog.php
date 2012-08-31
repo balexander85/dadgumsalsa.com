@@ -2,7 +2,7 @@
 
 <div id="mainFrame">
 <a href="http://www.google.com">
-<img id="frontImage" src="images/DGS_04.png" alt="Dad Gum Salsa Pepper" />
+<img id="frontImage" src="images/DGS_16.png" alt="Dad Gum Salsa Pepper" />
 </a>
 </div>
 
