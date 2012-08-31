@@ -1,7 +1,7 @@
 <?php include "DGS_header.php";?>
 
 <div id="mainFrame">
-	<img id="orderImg" src="images/DGS_04.png" alt="Dad Gum Salsa Title" />
+	<img id="orderImg" src="images/DGS_tomato.png" alt="Dad Gum Salsa Title" />
 	<!-- action="/dev.dadgumsalsa.com/dadgumOrderSuccess.php" onsubmit="return validateOrder();"-->
 	<form id="payment-form" action="" method="POST" onsubmit="return validateOrder();">
 	<!-- to display errors returned by createToken -->
