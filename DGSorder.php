@@ -1,4 +1,5 @@
-<?php include "DGS_header.php";?>
+<?php include "process_order.php"; ?>
+<?php include "DGS_header.php"; ?>
 
 <img class="left-image" src="images/DGS_tomato.png" alt="Dad Gum Salsa Title" />
 <!-- action="/dev.dadgumsalsa.com/dadgumOrderSuccess.php" onsubmit="return validateOrder();"-->

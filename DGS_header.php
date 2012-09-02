@@ -19,26 +19,6 @@
     }
 
     $title = $base ." | ". $page;
-
-	require 'stripe-php/lib/Stripe.php';
-
-	if ($_POST) {
-	  Stripe::setApiKey("sk_0D3gcdNkpSVula64o5eWDwcDuFsRb");
-	  $error = '';
-	  $success = '';
-	  try {
-	  	echo $_POST['stripeToken'];
-	    if (!isset($_POST['stripeToken']))
-	      throw new Exception("The Stripe Token was not generated correctly");
-	    Stripe_Charge::create(array("amount" => 500,
-	                                "currency" => "usd",
-	                                "card" => $_POST['stripeToken']));
-	    $success = 'Your payment was successful.';
-	  }
-	  catch (Exception $e) {
-	    $error = $e->getMessage();
-	  }
-	}
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
