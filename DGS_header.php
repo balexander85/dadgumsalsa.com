@@ -97,5 +97,4 @@
 	</script>
 </head>
 <body>
-
-<?php include "DGS_menu.php";?>
+<div class="main-frame">

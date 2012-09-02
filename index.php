@@ -1,9 +1,6 @@
 <?php include "DGS_header.php";?>
 
-<div id="mainFrame">
-<a class="" href="http://www.google.com">
-<img id="frontImage" src="images/DGS_04.png" alt="Index Image" />
-</a>
-</div>
+<img class="right-image" src="images/DGS_04.png" alt="Index Image" />
+<!-- <img id="" src="images/texas-flag.png" alt="Index Image" /> -->
 
 <?php include "DGS_footer.php";?>
