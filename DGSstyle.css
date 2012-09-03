@@ -18,6 +18,8 @@ body
 {
 /*	border: 2px solid #009999;*/
 	position: absolute;
+    width: 555px;
+    height: 400px;
 	right: .5px;
 }
 .right-image
@@ -37,8 +39,8 @@ body
 .left-image
 {
 	position: absolute;
-	width: 375px;
-	height: 300px;
+	width: 445px;
+	height: 400px;
 	left: 15px;
 }
 .menu-frame
