@@ -5,6 +5,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
+    url(r'^(?:index)?$', 'main.views.index'),
     # Example:
     # (r'^dadgumsalsa/', include('dadgumsalsa.foo.urls')),
 
