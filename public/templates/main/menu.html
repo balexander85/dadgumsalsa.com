@@ -1,0 +1,31 @@
+<div class="menu-frame">
+	<table class="menu-bar">
+		<tr>
+			<td>
+				<a href="{% url main.views.index %}">
+				<img src="{{ MEDIA_URL }}/media/menu_items/DGSfrontTitle.png" alt="Dad Gum Salsa Title" />
+				</a>
+			</td>
+			<td>
+				<a class="linkopacity" href="{% url main.views.about %}">
+				<img src="{{ MEDIA_URL }}/media/menu_items/DGSaboutLink.png" alt="About Label" />
+				</a>
+			</td>
+			<td>
+				<a class="linkopacity" href="{% url blog.views.index %}">
+				<img src="{{ MEDIA_URL }}/media/menu_items/DGSblogLink.png" alt="Blog Label" />
+				</a>
+			</td>
+			<td>
+				<a class="linkopacity" href="{% url order.views.index %}">
+				<img src="{{ MEDIA_URL }}/media/menu_items/DGSorderLink.png" alt="Order Label" />
+				</a>
+			</td>
+			<td>
+				<a class="linkopacity" href="{% url main.views.contact %}">
+				<img src="{{ MEDIA_URL }}/media/menu_items/DGScontactLink.png" alt="Contact Email" />
+				</a>
+			</td>
+		</tr>
+	</table>
+</div>
