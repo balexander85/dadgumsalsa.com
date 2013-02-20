@@ -12,11 +12,11 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'DGS_data',                      # Or path to database file if using sqlite3.
-        'USER': 'root',                      # Not used with sqlite3.
-        'PASSWORD': 'root',                  # Not used with sqlite3.
-        'HOST': '/Applications/MAMP/tmp/mysql/mysql.sock',                      # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '8000',                      # Set to empty string for default. Not used with sqlite3.
+        'NAME': 'dgs_data',                      # Or path to database file if using sqlite3.
+        'USER': 'dgsalsa',                      # Not used with sqlite3.
+        'PASSWORD': 'Nas1Swimwigy',                  # Not used with sqlite3.
+        'HOST': 'mysql.dhafley.com',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
 
@@ -45,29 +45,29 @@ USE_TZ = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-MEDIA_ROOT = '/Users/Brian/Sites/django_project/dadgumsalsa/media'
+MEDIA_ROOT = '/home/brianalexander/dev.dadgumsalsa.com/dadgumsalsa/media'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
-MEDIA_URL = 'http://localhost:8000/media/'
+MEDIA_URL = 'http://dev.dadgumsalsa.com/media/'
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = '/Users/Brian/Sites/django_project/dadgumsalsa/static'
+STATIC_ROOT = '/home/brianalexander/dev.dadgumsalsa.com/dadgumsalsa/static'
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
-STATIC_URL = 'http://localhost:8000/static/'
+STATIC_URL = 'http://dev.dadgumsalsa.com/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    '/Users/Brian/Sites/django_project/dadgumsalsa/templates/static'
+    '/home/brianalexander/dev.dadgumsalsa.com/dadgumsalsa/templates/static'
 )
 
 # List of finder classes that know how to find static files in
@@ -107,7 +107,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    '/Users/Brian/Sites/django_project/dadgumsalsa/templates'
+    '/home/brianalexander/dev.dadgumsalsa.com/dadgumsalsa/templates'
 )
 
 INSTALLED_APPS = (
@@ -120,7 +120,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
+    'django.contrib.admindocs',
     'main',
     'blog',
     'order',
