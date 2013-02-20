@@ -1,0 +1,29 @@
+
+{% extends 'main/base.html' %}
+{% block head_title %}About{% endblock %}
+
+{% block left_frame %}
+{% endblock %}
+
+{% block content %}
+	<center><h2>About Dad Gum Salsa</h2></center>
+		<!--<p>This is some text that is placed in the transparent box.
+		I've been making salsa for quite some time now, working on
+		perfecting my recipes and discovering new types of salsa too.
+		Ever since I returned from Alaska, I've been trying to think
+		of what I would really love to do. The one thing I know for
+		certain, is my love for salsa, it's a passion,
+		I could do it everyday happily!
+		</p> -->
+		<object id="video" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
+			<param name="src" value="{{ MEDIA_URL }}/media/videos/dadgumStillMovie.m4v" />
+			<param name="controller" value="true" />
+			<param name="autoplay" value="false" />
+			<!-- Code For Older Browsers -->
+			<embed id="video" src="{{ MEDIA_URL }}/media/videos/dadgumStillMovie.m4v" class="video-post"
+			 autoplay="false"
+			 controller="true"
+			 pluginspage="http://www.apple.com/quicktime/download/">
+			</embed>
+		</object>
+{% endblock %}

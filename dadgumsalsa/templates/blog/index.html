@@ -1,0 +1,40 @@
+{% extends 'main/base.html' %}
+{% block head_title %}Blog{% endblock %}
+
+{% block page_scripts %}
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="{{ STATIC_URL }}/static/jquery.mousewheel.js"></script>
+    <script>
+    $(function(){
+        // $(".main-frame").wrapInner("<table cellspacing='30'><tr>");
+        $(".post").wrap("<td></td>");
+        $("main-frame").mousewheel(function(event, delta) {
+            this.scrollLeft -= (delta * 30);
+            // event.preventDefault();
+        });   
+    });
+    </script>
+{% endblock %}
+
+
+{% block left_frame %}
+<img class="blog-image" src="{{ MEDIA_URL }}/media/images/DGS_tomato.png" alt="tomato" />
+{% endblock %}
+
+{% block content %}
+    {% if posts %}
+        {% for post in posts reversed %}
+            <div class="post">
+                <a href="{{ post.get_absolute_url }}"><h3>{{ post.title }}</h3></a>
+                <span class="superscript">{{ post.posted }}</span>
+                <br />
+                <img class="blog-image" src="/media/{{ post.photo }}" alt="tomato" />
+                <p>{{ post.body }}</p>
+            </div>
+        {% endfor %}
+        <br />
+        <span>Scroll right to see more...</span>
+    {% else %}
+        <p>There are no posts.</p>
+    {% endif %}
+{% endblock %}
