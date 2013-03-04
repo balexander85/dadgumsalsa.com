@@ -6,7 +6,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^(?:index)?$', 'main.views.index'),
-    url(r'^(?:resume)?$', 'resume.views.index'),
+    url(r'^resume(?:\.html)?$', 'resume.views.index'),
     url(r'^order/$', 'order.views.index'),
     url(r'^contact/$', 'main.views.contact'),
     url(r'^about/$', 'main.views.about'),
