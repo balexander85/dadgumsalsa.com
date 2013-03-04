@@ -45,12 +45,14 @@ USE_TZ = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
+
 # '/home/brianalexander/dev.dadgumsalsa.com/dadgumsalsa/media'
 MEDIA_ROOT = '/Users/Brian/Sites/dadgumsalsa.com/dadgumsalsa/media'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
+
 # 'http://dev.dadgumsalsa.com/media/'
 MEDIA_URL = 'http://127.0.0.1:8000/media'
 
@@ -58,12 +60,13 @@ MEDIA_URL = 'http://127.0.0.1:8000/media'
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
-# '/home/brianalexander/dev.dadgumsalsa.com/dadgumsalsa/static'
+
+# '/home/brianalexander/dadgumsalsa.com/dadgumsalsa/static'
 STATIC_ROOT = '/Users/Brian/Sites/dadgumsalsa.com/dadgumsalsa/static'
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
-# 'http://dev.dadgumsalsa.com/static/'
+# 'http://dadgumsalsa.com/static/'
 STATIC_URL = 'http://127.0.0.1:8000/static'
 
 # Additional locations of static files
@@ -71,8 +74,9 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    '/home/brianalexander/dev.dadgumsalsa.com/dadgumsalsa/templates/static',
-    '/Users/Brian/Sites/dadgumsalsa.com/dadgumsalsa/templates/static'
+    '/home/brianalexander/dadgumsalsa.com/dadgumsalsa/templates/static',
+    '/Users/Brian/Sites/dadgumsalsa.com/dadgumsalsa/templates/static',
+    '/home/brianalexander/dadgumsalsa.com/dadgumsalsa/templates/static',
 )
 
 # List of finder classes that know how to find static files in
@@ -112,8 +116,8 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    '/home/brianalexander/dev.dadgumsalsa.com/dadgumsalsa/templates',
-    '/Users/Brian/Sites/dadgumsalsa.com/dadgumsalsa/templates'
+    '/home/brianalexander/dadgumsalsa.com/dadgumsalsa/templates',
+    '/Users/Brian/Sites/dadgumsalsa.com/dadgumsalsa/templates',
 )
 
 INSTALLED_APPS = (
@@ -130,6 +134,7 @@ INSTALLED_APPS = (
     'main',
     'blog',
     'order',
+    'resume',
 )
 
 # A sample logging configuration. The only tangible logging
