@@ -15,7 +15,12 @@ framework.
 """
 import os
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "dadgumsalsa.settings")
+# os.environ.setdefault("DJANGO_SETTINGS_MODULE", "dadgumsalsa.settings")
+
+if os.environ['HOME'] == '/home/brianalexander':
+    os.environ['DJANGO_SETTINGS_MODULE'] = "dadgumsalsa.settings_production"
+elif os.environ['HOME'] == '/Users/Brian':
+    os.environ['DJANGO_SETTINGS_MODULE'] = "dadgumsalsa.settings_local"
 
 # This application object is used by any WSGI server configured to use this
 # file. This includes Django's development server, if the WSGI_APPLICATION
