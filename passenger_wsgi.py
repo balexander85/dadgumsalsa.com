@@ -13,10 +13,8 @@ sys.path.insert(0, '/home/brianalexander/dadgumsalsa.com/env/bin')
 sys.path.insert(0, '/home/brianalexander/dadgumsalsa.com/env/lib/python2.7/site-packages/django')
 sys.path.insert(0, '/home/brianalexander/dadgumsalsa.com/env/lib/python2.7/site-packages')
 
-if os.environ['HOME'] == '/home/brianalexander/dadgumsalsa.com':
+if os.environ['HOME'] == '/home/brianalexander':
     os.environ['DJANGO_SETTINGS_MODULE'] = "dadgumsalsa.settings_production"
-elif os.environ['HOME'] == '/home/brianalexander/dev.dadgumsalsa.com':
-    os.environ['DJANGO_SETTINGS_MODULE'] = "dadgumsalsa.settings_dev"
 elif os.environ['HOME'] == '/Users/Brian':
     os.environ['DJANGO_SETTINGS_MODULE'] = "dadgumsalsa.settings_local"
 
