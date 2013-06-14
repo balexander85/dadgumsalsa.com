@@ -134,6 +134,7 @@ INSTALLED_APPS = (
     'blog',
     'order',
     'resume',
+    'portfolio',
 )
 
 # A sample logging configuration. The only tangible logging
