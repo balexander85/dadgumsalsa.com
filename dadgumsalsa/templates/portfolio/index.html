@@ -3,13 +3,23 @@
 		<title>B-Axe's Roth IRA</title>
 	</head>
 	<body>
-		<p>Chea</p>
     	{% if entries %}
-        	{% for entry in entries %}
-            	<div>
-                	<p>FURREAL</p>
-            	</div>
-        	{% endfor %}
+    		<table>
+    			<th>Date</th>
+    			<th>Ticker</th>
+    			<th>Security Name</th>
+    			<th>QTY</th>
+    			<th>Price</th>
+        		{% for entry in entries %}
+            		<tr>
+            			<td>{{ entry.log_date }}</td>
+                		<td>{{ entry.symbol }}</td>
+                		<td>{{ entry.security_name }}</td>
+                		<td>{{ entry.security_qty }}</td>
+                		<td>{{ entry.security_price }}</td>
+            		</tr>
+        		{% endfor %}
+        	</table>
     	{% else %}
         	<p>There are no stocks.</p>
     	{% endif %}

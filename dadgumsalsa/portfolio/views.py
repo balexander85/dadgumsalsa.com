@@ -8,5 +8,5 @@ chea = 'oof!'
 
 def index(request):
     return render_to_response('portfolio/index.html', {
-        'entries': chea  # daily_balances.objects.all()
+        'entries': daily_balances.objects.all().order_by('log_date').reverse()[:7]
     })
