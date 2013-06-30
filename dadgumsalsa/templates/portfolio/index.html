@@ -1,27 +1,33 @@
 <html>
-	<head>
-		<title>B-Axe's Roth IRA</title>
-	</head>
-	<body>
-    	{% if entries %}
-    		<table>
-    			<th>Date</th>
-    			<th>Ticker</th>
-    			<th>Security Name</th>
-    			<th>QTY</th>
-    			<th>Price</th>
-        		{% for entry in entries %}
-            		<tr>
-            			<td>{{ entry.log_date }}</td>
-                		<td>{{ entry.symbol }}</td>
-                		<td>{{ entry.security_name }}</td>
-                		<td>{{ entry.security_qty }}</td>
-                		<td>{{ entry.security_price }}</td>
-            		</tr>
-        		{% endfor %}
-        	</table>
-    	{% else %}
-        	<p>There are no stocks.</p>
-    	{% endif %}
-	</body>
+    <head>
+        <title>B-Axe's Roth IRA</title>
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/static/stocks_style.css" />
+    </head>
+    <body>
+        {% if entries %}
+            <table>
+                <th>Date</th>
+                <th>Ticker</th>
+                <th>Security Name</th>
+                <th>QTY</th>
+                <th>Price</th>
+                <th>Value</th>
+                {% for entry in entries %}
+                    <tr>
+                        <td>{{ entry.log_date }}</td>
+                        <td>{{ entry.symbol }}</td>
+                        <td>{{ entry.security_name }}</td>
+                        <td>{{ entry.security_qty }}</td>
+                        <td>{{ entry.security_price }}</td>
+                        <!-- <td>{{ sum }}</td> -->
+                    </tr>
+                {% endfor %}
+                <tr>
+                    <td>Total Portofilio value: </td>
+                </tr>
+            </table>
+        {% else %}
+            <p>There are no stocks.</p>
+        {% endif %}
+    </body>
 </html>
