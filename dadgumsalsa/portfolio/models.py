@@ -7,3 +7,6 @@ class daily_balances(models.Model):
     security_name = models.TextField()
     security_qty = models.FloatField()
     security_price = models.FloatField()
+
+    def total_value(self):
+        return self.security_qty * self.security_price
