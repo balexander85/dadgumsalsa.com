@@ -54,7 +54,7 @@ MEDIA_ROOT = '/Users/Brian/Sites/dadgumsalsa.com/dadgumsalsa/media'
 # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
 
 # MEDIA_URL = 'http://dadgumsalsa.com/media/'
-MEDIA_URL = 'http://127.0.0.1:8000/media'
+MEDIA_URL = 'http://127.0.0.1:8000/media/'
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
@@ -67,7 +67,7 @@ STATIC_ROOT = '/Users/Brian/Sites/dadgumsalsa.com/dadgumsalsa/static'
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
 # STATIC_URL = 'http://dadgumsalsa.com/static/'
-STATIC_URL = 'http://127.0.0.1:8000/static'
+STATIC_URL = 'http://127.0.0.1:8000/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
