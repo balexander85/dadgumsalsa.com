@@ -1,7 +1,7 @@
 import sys, os
 cwd = os.getcwd()
 sys.path.append(cwd)
-sys.path.append(cwd + '/dadgumsalsa')  # You must add your project here or 500
+sys.path.append(cwd + '/public/dadgumsalsa')  # You must add your project here or 500
 
  #Switch to new python
  #You may try to replace $HOME with your actual path
