@@ -16,7 +16,7 @@ sys.path.insert(0, '/home/brianalexander/dadgumsalsa.com/env/lib/python2.7/site-
 if os.environ['HOME'] == '/home/brianalexander':
     os.environ['DJANGO_SETTINGS_MODULE'] = "dadgumsalsa.settings_production"
 elif os.environ['HOME'] == '/Users/Brian':
-    os.environ['DJANGO_SETTINGS_MODULE'] = "public.dadgumsalsa.settings_local"
+    os.environ['DJANGO_SETTINGS_MODULE'] = "dadgumsalsa.settings_local"
 
 import django.core.handlers.wsgi
 application = django.core.handlers.wsgi.WSGIHandler()
