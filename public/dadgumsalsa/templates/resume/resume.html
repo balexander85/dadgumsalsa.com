@@ -25,9 +25,9 @@
 			<div id="objective">
 				<h3 class="header">OBJECTIVE</h3>
 				<hr />
-				<p>To work in an environment that permits me to utilize
-				my current skills while allowing me to learn new skills
-				and grow professionally as a developer.</p>
+				{% for obj in objectives %}
+					{{ obj.objective |safe }}
+				{% endfor %}
 			</div>
 			<br />
 
@@ -44,59 +44,48 @@
 					<tr><td class="position_title">{{ job.position_title }}</td></tr>
 				</table>
 				<ul>
-						{{job.job_description|safe }}
+					{{job.job_description|safe }}
 				</ul>
 				<br />
 				{% endfor %}
-
-
-				<br />
 				<p style="font-size: 80%;"><span class="superscript">1</span>&nbsp;Held same position previously: January 2009 - June 2009</p>
-
 			</div>
+
 
 			<div id="education">
 				<h3 class="header">EDUCATION</h3>
 				<hr />
 
 				<table>
-					<tr>
-					<td class="dates">August 2004 - May 2008</td>
-					<td class="company_name">Texas State University</td>
-					<td class="job_location">San Marcos, TX</td>
-					</tr>
-					<tr><td class="position_title">Bachelor of Arts in Political Science</td></tr>
+				{% for edu in education %}
+					{{ edu.education |safe }}
+				{% endfor %}
 				</table>
 			</div>
 
 			<div id="skills">
 				<h3 class="header">SKILLS</h3>
 				<hr />
-				<p><strong>Computer:</strong> MS Office, Mac&amp;PC, Windows 7, HTML, CSS, Regular Expressions, GIT, PHP, Python, SQL, Selenium, Xcode</p>
-				<p><strong>Personal:</strong> Oral and written communication, customer service, critical thinker, detail oriented. Works well independently but is also proficient while working with others.</p>
+				{% for skill in skills %}
+					{{ skill.skills |safe }}
+				{% endfor %}
 			</div>
 
-			<br />
 			<div id="special">
 				<h3 class="header">SPECIAL INTEREST</h3>
 				<hr />
-				<p> I have a passion for making salsa;
-				sometimes I make it fresh, but I really enjoy
-				roasting all of the ingredients before placing
-				in food processor. I enjoy camping and hiking;
-				my most memorable moment was when my father, brother,
-				and I hiked the Inca Trail for 26 miles in the
-				Andes to Machu Picchu.</p>
+				{% for interest in special_interest %}
+					{{ interest.interest |safe }}
+				{% endfor %}
 			</div>
 
 			<div id="project">
 				<h3 class="header">PROJECTS</h3>
 				<hr />
 				<ul>
-					<li><a href="http://www.dadgumsalsa.com" target="_blank">My Dad Gum Website</a></li>
-					<li><a href="http://www.dadgumsalsa.com/about" target="_blank">My Dad Gum Video</a></li>
-					<li>Github Username:<a href="https://github.com/balexander85" target="_blank"> balexander85</a></li>
-					<li><a href="https://github.com/balexander85/Airline-Mileage-Plan" target="_blank">Airline Mileage Plan Project</a></li>
+					{% for project in projects %}
+						{{ project.projects |safe }}
+					{% endfor %}
 				</ul>
 			</div>
 
