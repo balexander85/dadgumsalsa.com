@@ -1,4 +1,4 @@
-#!/home/brianalexander/dev.dadgumsalsa.com/env/bin/python
+#!/home/brianalexander/dadgumsalsa.com/env/bin/python
 #
 # The Python Imaging Library.
 # $Id$

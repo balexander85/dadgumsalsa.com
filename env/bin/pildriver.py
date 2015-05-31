@@ -1,4 +1,4 @@
-#!/home/brianalexander/dev.dadgumsalsa.com/env/bin/python
+#!/home/brianalexander/dadgumsalsa.com/env/bin/python
 """PILdriver, an image-processing calculator using PIL.
 
 An instance of class PILDriver is essentially a software stack machine

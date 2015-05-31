@@ -1,1 +1,1 @@
-/home/brianalexander/Python27
+/usr
