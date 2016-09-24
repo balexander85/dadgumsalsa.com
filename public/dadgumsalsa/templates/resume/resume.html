@@ -12,10 +12,9 @@
                         <tr>
                         <td style="width: 450px;">
 			<p>
-                        2901 Barton Skyway APT 1201<br />
-			Austin, TX 78746<br />
+			Austin, TX<br />
 			214.762.5564<br />
-			balexander04@gmail.com
+			briandanielalexander@gmail.com
 			</p>
 			</td>
 			<!--<td><img class="resume_pic" src="{{ MEDIA_URL }}/media/images/resume_pic.jpg" alt="Bethel, Alaska"/></td>-->
@@ -27,7 +26,7 @@
 			<br />
 
 			<div id="objective">
-				<h3 class="header">OBJECTIVE</h3>
+				<h3 class="header">SUMMARY</h3>
 				<hr />
 				{% for obj in objectives %}
 					{{ obj.objective |safe }}
@@ -52,7 +51,7 @@
 				</ul>
 				<br />
 				{% endfor %}
-				<p style="font-size: 80%;"><span class="superscript">1</span>&nbsp;Held same position previously: January 2009 - June 2009</p>
+				<!--<p style="font-size: 80%;"><span class="superscript">1</span>&nbsp;Held same position previously: January 2009 - June 2009</p>-->
 			</div>
 
 
@@ -74,15 +73,15 @@
 					{{ skill.skills |safe }}
 				{% endfor %}
 			</div>
-
+<!--
 			<div id="special">
 				<h3 class="header">SPECIAL INTEREST</h3>
 				<hr />
 				{% for interest in special_interest %}
 					{{ interest.interest |safe }}
 				{% endfor %}
-			</div>
-
+			</div>-->
+<!--
 			<div id="project">
 				<h3 class="header">PROJECTS</h3>
 				<hr />
@@ -92,7 +91,7 @@
 					{% endfor %}
 				</ul>
 			</div>
-
+-->
 		</div>
 	</body>
 </html>

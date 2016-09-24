@@ -24,13 +24,14 @@ ul
 
 li
 {
-	margin-bottom : 3pt;
+	margin-bottom : 1pt;
 }
 
 .page
 {
 	background-color: #FFFFFF;
 	border-radius: 20px;
+        padding-bottom: 3px;
 }
 
 /*.resume_pic
@@ -54,6 +55,7 @@ li
         margin-left: auto;
         margin-right: auto;
         text-align: center;
+        font-size: 14px;
         /*border-style:dotted;
 	border-width:thin;*/
 }
@@ -61,20 +63,42 @@ li
 #contact_name
 {
        /*color: blue;*/
-       font-size: 40px;
+       font-size: 35px;
 }
 
 #objective
 {
 
 	font-family: "Times New Roman";
-	font-size: 15px;
+	font-size: 14px;
 	/*border-style:dotted;
 	border-width:thin;*/
 }
 
-.experience
+#experience
 {
+        font-size: 14px;
+/*	border-style:dotted;
+	border-width:thin;*/
+}
+
+#special
+{
+        font-size: 14px;
+/*	border-style:dotted;
+	border-width:thin;*/
+}
+
+#education
+{
+        font-size: 14px;
+/*	border-style:dotted;
+	border-width:thin;*/
+}
+
+#skills
+{
+        font-size: 14px;
 /*	border-style:dotted;
 	border-width:thin;*/
 }
